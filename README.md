@@ -1,5 +1,5 @@
 # FunGPT
-a model for fun
+exploring...
 
 ## First. Data Collecting
 I am collecting the data needed to finetune the model...
