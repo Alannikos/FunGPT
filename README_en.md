@@ -26,15 +26,16 @@ In this fast-paced world, we all need a little something to spice up life. Wheth
 
 🍬 Sweet Talk Mode:
 
-- **Mood Booster**: When you're feeling down, our sweet talk mode can instantly lift your spirits, like eating a super sweet piece of candy.
-- **Confidence Booster**: Our AI will compliment you in the most unique ways, making your confidence soar.
-- **Social Lubricant**: Whether it's joking with friends or a moment of relaxation at work, "sweet words" can make your communication smoother.
+- **Mood Booster🌟✨**: When you're feeling down, our sweet talk mode can instantly lift your spirits, like eating a super sweet piece of candy.
+- **Confidence Booster💪🌈**: Our AI will compliment you in the most unique ways, making your confidence soar.
+- **Social Lubricant😄🤝**: Whether it's joking with friends or a moment of relaxation at work, "sweet words" can make your communication smoother.
 
 🔪 Retort Mode:
 
-- **Stress Release Valve**: When you're feeling overwhelmed, our retort mode allows you to vent while keeping your cool.
-- **Humor Dispenser**: Our retort mode is not only sharp but also humorous and witty, allowing you to maintain your grace while retorting.
-- **Social Regulator**: Retort mode is the regulator in your social life, allowing you to maintain harmony in your relationships while retorting.
+- **Stress Release Valve💥😤**: When you're feeling overwhelmed, our retort mode allows you to vent while keeping your cool.
+- **Humor Dispenser😂👅**: Our retort mode is not only sharp but also humorous and witty, allowing you to maintain your grace while retorting.
+- **Social Regulator🤝⚖️**: Retort mode is the regulator in your social life, allowing you to maintain harmony in your relationships while retorting.
+
 _____________________________________________________________________
 
 ## Star History
