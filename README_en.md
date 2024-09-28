@@ -35,3 +35,8 @@ In this fast-paced world, we all need a little something to spice up life. Wheth
 - **Stress Release Valve**: When you're feeling overwhelmed, our retort mode allows you to vent while keeping your cool.
 - **Humor Dispenser**: Our retort mode is not only sharp but also humorous and witty, allowing you to maintain your grace while retorting.
 - **Social Regulator**: Retort mode is the regulator in your social life, allowing you to maintain harmony in your relationships while retorting.
+_____________________________________________________________________
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=Alannikos/FunGPT&type=Date)](https://star-history.com/#Alannikos/FunGPT&Date)
