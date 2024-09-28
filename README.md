@@ -5,7 +5,7 @@
   [🛠️Quick Start](https://github.com/Alannikos/FunGPT) |
   [🤔Reporting Issues](https://github.com/Alannikos/FunGPT/issues) 
 
-  [English](README.md) | [简体中文](README.md)
+  [English](README_en.md) | [简体中文](README_zh.md)
 
 </div>
 
