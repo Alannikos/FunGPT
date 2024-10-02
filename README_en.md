@@ -10,6 +10,7 @@
 
 _____________________________________________________________________
 
+
 ## Latest News 🎉
 
 <details open>
@@ -23,6 +24,7 @@ _____________________________________________________________________
 
 </details>
 _____________________________________________________________________
+
 
 ## 🌈 FunGPT —— Your Intelligent Emotional Mixologist🍹
 
@@ -41,6 +43,7 @@ In this fast-paced world, we all need a little something to spice up life. Wheth
 - **Social Regulator🤝⚖️**: Retort mode is the regulator in your social life, allowing you to maintain harmony in your relationships while retorting.
 
 _____________________________________________________________________
+
 
 ## Star History
 
