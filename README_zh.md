@@ -15,8 +15,8 @@ ______________________________________________________________________
 <details open>
 <summary><b>2024</b></summary>
 
-- \[2024/09/28\] 初步完成LLM（[InternLM2.5_1.8b](https://huggingface.co/internlm/internlm2_5-1_8b-chat)）, ASR([Sensevoice](https://www.modelscope.cn/models/iic/sensevoicesmall))以及TTS([ChatTTS](https://huggingface.co/2Noise/ChatTTS))部分的单功能测试，接下来完成项目各功能的集成工作。 👋👋
-- \[2024/10/02\] 添加了异常处理模块，增加应用的稳定性。 😄🐍✨
+- \[2024/09/28\] 👋👋 初步完成LLM（[InternLM2.5_1.8b](https://huggingface.co/internlm/internlm2_5-1_8b-chat)）, ASR([Sensevoice](https://www.modelscope.cn/models/iic/sensevoicesmall))以及TTS([ChatTTS](https://huggingface.co/2Noise/ChatTTS))部分的单功能测试，接下来完成项目各功能的集成工作。
+- \[2024/10/02\] 😄🐍✨ 添加了异常处理模块，增加应用的稳定性。
 
 
 </details>
