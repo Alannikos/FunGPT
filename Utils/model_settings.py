@@ -9,7 +9,6 @@ class GenerationConfig:
     do_sample: bool = True
     repetition_penalty: float = 1.005
 
-
 def llm_settings():
     st.sidebar.subheader("LLM 设置")
     use_llm = st.sidebar.checkbox("启用语言模型 (LLM)", value=False)

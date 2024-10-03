@@ -13,7 +13,7 @@ from Utils.model_utils import init_LLM_Model, init_ASR_Model, init_TTS_Model
 from Utils.model_settings import llm_settings, asr_settings, tts_settings
 from Utils.common_utils import initialize_session_state
 from Utils.common_utils import get_avatar, combine_history, load_lottieurl
-from Utils.data_utils import get_audio_input, handle_user_input, show_dialog_interface
+from Utils.data_utils import get_audio_input, handle_user_input
 
 def main():
     st.title("FunGPT  -  您的情感调酒师🍹")
@@ -69,7 +69,6 @@ def main():
         }
         </style>
         """, unsafe_allow_html=True)
-
 
     st.sidebar.title("模型设置")
 
@@ -142,101 +141,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-# import os
-# import gc
-# import sys
-# import time
-# import torch
-# import requests
-# from dataclasses import asdict
-# import streamlit as st
-# from streamlit_lottie import st_lottie
-# sys.path.append("/root/Project_FunGPT/Developing")
-
-# from Utils.model_utils import init_LLM_Model, init_ASR_Model, init_TTS_Model
-# from Utils.model_settings import llm_settings, asr_settings, tts_settings
-# from Utils.common_utils import initialize_session_state
-# from Utils.common_utils import get_avatar, combine_history
-# from Utils.data_utils import get_audio_input, handle_user_input, show_dialog_interface
-
-# def load_lottieurl(url: str):
-#     r = requests.get(url)
-#     if r.status_code != 200:
-#         return None
-#     return r.json()
-
-# def main():
-#     st.set_page_config(page_title="FunGPT - 您的情感调酒师", layout="wide")
-
-#     # 自定义CSS
-#     st.markdown("""
-#     <style>
-#         .main {
-#             background-color: #1E1E1E;
-#             color: white;
-#         }
-#         .stButton>button {
-#             color: #1E1E1E;
-#             background-color: #FF9F00;
-#             border-radius: 20px;
-#         }
-#         .lottie-container {
-#             display: flex;
-#             justify-content: center;
-#             align-items: center;
-#         }
-#         .sidebar .sidebar-content {
-#             background-color: #2E2E2E;
-#         }
-#     </style>
-#     """, unsafe_allow_html=True)
-
-#     # 布局
-#     col1, col2, col3 = st.columns([1,2,1])
-
-#     with col1:
-#         st.sidebar.title("模型设置")
-#         initialize_session_state()
-
-#         llm_config = llm_settings()
-#         asr_config = asr_settings()
-#         tts_config = tts_settings()
-
-#         loading_placeholder = st.sidebar.empty()
-
-#         # 模型初始化和清理逻辑（保持不变）
-#         # ...
-
-#     with col2:
-#         st.title("FunGPT  -  您的情感调酒师🍹")
-#         st.markdown("### 让AI为您的心情调制完美鸡尾酒")
-
-#         # 加载动画并居中
-#         st.markdown('<div class="lottie-container">', unsafe_allow_html=True)
-#         lottie_cocktail = load_lottieurl("https://lottie.host/159ecdad-0271-4e38-9549-7a6d92d2faf3/VrZHqb1c1G.json")
-#         st_lottie(lottie_cocktail, height=300, width=600, key="cocktail")
-#         st.markdown('</div>', unsafe_allow_html=True)
-
-#         # 展示历史对话
-#         for message in st.session_state.chat_history:
-#             with st.chat_message(message['role'], avatar=get_avatar("person2" if message['role'] == 'user' else "person1")):
-#                 st.markdown(message['content'])
-#                 if 'wav_path' in message and message['wav_path'] is not None:
-#                     st.session_state.TTS_Model.show_audio(message['wav_path'])
-
-#         # 处理用户的输入
-#         handle_user_input()
-
-#     with col3:
-#         st.markdown("### 今日推荐")
-#         st.info("心情提升特调: 阳光莫吉托")
-#         st.success("放松解压之选: 蓝色夏威夷")
-#         st.warning("激情创意之源: 红粉佳人")
-
-#     # 在页面底部添加版权信息
-#     st.markdown("---")
-#     st.markdown("© 2024 FunGPT. All rights reserved.")
-
-# if __name__ == "__main__":
-#     main()

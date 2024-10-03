@@ -19,6 +19,7 @@ _____________________________________________________________________
 - \[2024/09/28\] 👋👋 Initial completion of the single-function testing for LLM ([InternLM2.5_1.8b](https://huggingface.co/internlm/internlm2_5-1_8b-chat)), ASR ([Sensevoice](https://www.modelscope.cn/models/iic/sensevoicesmall)), and TTS ([ChatTTS](https://huggingface.co/2Noise/ChatTTS)). Next up, integrating the various functionalities of the project.
 - \[2024/10/01\] 😄🐍✨ Added exception handling to enhance application stability.
 - \[2024/10/02\] 🚀💻 Add mechanisms for model loading and unloading to efficiently use GPU memory.
+- \[2024/10/03\] 🎨🐞 Spruce up the interface to make it more visually appealing and fix some known bugs.
 
 
 
