@@ -28,10 +28,9 @@ _____________________________________________________________________
 _____________________________________________________________________
 
 
-## 🌈 FunGPT —— Your Intelligent Emotional Mixologist🍹
+## 🌈 FunGPT —— Your Intelligent Emotional Regulator.🍹
 
 In this fast-paced world, we all need a little something to spice up life. Whether you need a touch of **sweet talk** to lift your spirits or a dose of **sharp comebacks** to release stress, **FunGPT**, developed based on the InternLM2.5 series of large models, has got you covered.
-
 
 🍬 Sweet Talk Mode:
 
