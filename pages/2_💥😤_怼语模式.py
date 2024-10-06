@@ -105,7 +105,7 @@ def main():
     # 初始化模型
     if llm_config["use"] and (st.session_state.LLM_Model is None or st.session_state.llm_config != llm_config):
         loading_placeholder.info("正在加载LLM模型...")
-        st.session_state.LLM_Model = init_LLM_Model(model_path='/root/Project_FunGPT/Developing/LLM/weights/internlm2_5-1_8b-chat')
+        st.session_state.LLM_Model = init_LLM_Model(model_path='/root/Project_FunGPT/Developing/LLM/weights/internlm2_5-7b-chat')
         st.session_state.llm_config = llm_config
         loading_placeholder.success("LLM模型加载完成！")
         time.sleep(1)
@@ -137,7 +137,7 @@ def main():
                 st.session_state.TTS_Model.show_audio(message['wav_path'])
 
     # 处理用户的输入(两个维度：语音以及文本)
-    handle_user_input()
+    handle_user_input(mode=2)
 
 if __name__ == "__main__":
     main()

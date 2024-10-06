@@ -7,7 +7,7 @@ import streamlit as st
 from audio_recorder_streamlit import audio_recorder
 
 sys.path.append("/root/Project_FunGPT/Developing")
-from Utils.common_utils import get_avatar, combine_history
+from Utils.common_utils import get_avatar, combine_history, combine_history_p2
 
 def get_audio_input():
     with st.sidebar:
@@ -66,14 +66,16 @@ def get_audio_input():
 
     return None
 
-def show_dialog_interface(user_input):
+def show_dialog_interface(user_input, mode=1):
     
     # 如果有用户输入,处理它
     if user_input:
         with st.chat_message('user', avatar=get_avatar("person2")):
             st.markdown(user_input)
-        
-        new_history = combine_history(user_input)
+        if mode == 1:
+            new_history = combine_history(user_input)
+        else:
+            new_history = combine_history_p2(user_input)
         st.session_state.chat_history.append({'role': 'user', 'content': user_input})
 
         # 2024/10/1 异常处理机制
@@ -100,7 +102,7 @@ def show_dialog_interface(user_input):
             time.sleep(2)
             model_placeholder.empty()
 
-def handle_user_input():
+def handle_user_input(mode=1):
     user_input = None
     input_type = None
 
@@ -118,4 +120,4 @@ def handle_user_input():
             input_type = "text"
 
     # 展示对话界面
-    show_dialog_interface(user_input)
+    show_dialog_interface(user_input, mode)

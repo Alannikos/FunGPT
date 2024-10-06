@@ -1,6 +1,10 @@
-import streamlit as st
+import sys
 import requests
+import streamlit as st
 
+sys.path.append("/root/Project_FunGPT/Developing/")
+
+from LLM.templates.template import Template
 
 user_prompt = '<|im_start|>user\n{user}<|im_end|>\n'
 robot_prompt = '<|im_start|>assistant\n{robot}<|im_end|>\n'
@@ -30,9 +34,10 @@ def initialize_session_state():
 
 def combine_history(prompt):
     messages = st.session_state.chat_history
-    meta_instruction = ('You are InternLM (书生·浦语), a helpful, honest, '
-                    'and harmless AI assistant developed by Shanghai '
-                    'AI Laboratory (上海人工智能实验室).')
+    # meta_instruction = ('You are InternLM (书生·浦语), a helpful, honest, '
+    #                 'and harmless AI assistant developed by Shanghai '
+    #                 'AI Laboratory (上海人工智能实验室).')
+    meta_instruction = (Template.KUA_GENERATE_DATA_TEMPLATE)
 
     total_prompt = f'<s><|im_start|>system\n{meta_instruction}<|im_end|>\n'
     for message in messages:
@@ -69,10 +74,11 @@ def initialize_session_state_p2():
         st.rerun()
 
 def combine_history_p2(prompt):
-    messages = st.session_state.chat_history_p2
-    meta_instruction = ('You are InternLM (书生·浦语), a helpful, honest, '
-                    'and harmless AI assistant developed by Shanghai '
-                    'AI Laboratory (上海人工智能实验室).')
+    messages = st.session_state.chat_history
+    # meta_instruction = ('You are InternLM (书生·浦语), a helpful, honest, '
+    #                 'and harmless AI assistant developed by Shanghai '
+    #                 'AI Laboratory (上海人工智能实验室).')
+    meta_instruction = (Template.DUI_GENERATE_DATA_TEMPLATE)
 
     total_prompt = f'<s><|im_start|>system\n{meta_instruction}<|im_end|>\n'
     for message in messages:
