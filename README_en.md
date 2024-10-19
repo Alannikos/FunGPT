@@ -46,6 +46,25 @@ In this fast-paced world, we all need a little something to spice up life. Wheth
 
 _____________________________________________________________________
 
+## FunGPT — Project Highlights and Overview 🌟
+
+This project emerged from the Shusheng Puyu Large Model Practicum Camp Phase Four's project incubation, utilizing the advanced InternLM2.5 series model. We used Xtuner for instruction and full fine-tuning to meet our personalized requirements. To enhance user convenience, we specifically quantized the 7B model and chose Shusheng Puyu's LMDeploy toolchain for deployment, saving memory and boosting inference speed! ⚡
+
+Project Highlights:
+
+  1. 📖 Comprehensive LLM Guide: Complete code and documentation, 100% open source, making it easy to get started.
+  2. 🔊 Full ASR Guide: Open-source everything to help you achieve your speech dreams.
+  3. 🎙️ Complete TTS Guide: From basics to advanced, fully open-sourced with no secrets!
+  4. 📂 Clear Structure, Detailed Documentation: Detailed annotations and explanation docs for easy onboarding!
+  5. ⚡ Model Quantization: Lowering the use threshold, experience AI’s charm anytime, anywhere.
+  6. 📊 Data Collection Guide: Fully open source, helping you quickly master fine-tuning data creation.
+  7. 🎥 Video Tutorials: Stay tuned for our comprehensive project introduction videos!
+  8. 🤗 Compliment Expert: Generates sweet words to accompany you every day.
+  9. 🗯️ Comeback Master: Targeted responses with witty comebacks to engage and amuse.
+
+We believe FunGPT will not only provide you technical inspiration but also endless fun in interaction. Let's explore the infinite possibilities of AI together, enhancing your social charm and linguistic artistry! Join us in this unparalleled innovative journey! 🌟
+_____________________________________________________________________
+
 
 ## Star History
 
