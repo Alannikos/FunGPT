@@ -21,6 +21,7 @@ _____________________________________________________________________
 - \[2024/10/01\] 😄🐍✨ Added exception handling to enhance application stability.
 - \[2024/10/02\] 🚀💻 Add mechanisms for model loading and unloading to efficiently use GPU memory.
 - \[2024/10/03\] 🎨🐞 Spruce up the interface to make it more visually appealing and fix some known bugs.
+- \[2024/10/03\] 🎉💬 Completed the generation of conversation topics and the dialogue data using LLM
 
 
 </details>
