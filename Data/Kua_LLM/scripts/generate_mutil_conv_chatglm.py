@@ -80,7 +80,7 @@ def save_dialogue_to_jsonl(data):
 
 def main():
     # 1. 生成LLM对象
-    my_model = MyChatGLM(api_key='479dc4c9611acd56f0b7981f126a3411.tNS782K8hcuk1UeO')
+    my_model = MyChatGLM(api_key='xxx')
 
     # 多轮对话数据列表（元素是一个对话记录）
     res = []
