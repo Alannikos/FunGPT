@@ -21,7 +21,7 @@ _____________________________________________________________________
 - \[2024/10/02\] 🚀💻 Add mechanisms for model loading and unloading to efficiently use GPU memory.
 - \[2024/10/03\] 🎨🐞 Spruce up the interface to make it more visually appealing and fix some known bugs.
 - \[2024/10/19\] 🎉💬 Completed the generation of conversation topics and the dialogue data using LLM
-
+- \[2024/10/28\] 🎈🥳 complete the configuration for finetuning in XTuner, and now it's time to release the first version of our awesome praise-giving model [Kua_LLM](https://modelscope.cn)!
 
 </details>
 
