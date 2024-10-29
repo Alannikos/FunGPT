@@ -16,34 +16,14 @@ class MyChatGLM:
         self.model_name = 'GLM4'
         self.model = ZhipuAI(api_key=api_key)  # 请填写自己的APIKey
 
-
-    """
-    目标: 1. 请生成一个和""{key_word}""这句话最符合的场景，只生成场景
-                      2. 你需要结合这句话思考最合适的场景，同时确保生成的场景多样化。
-                      3. 请保证这个场景的质量，只生成一个场景，主角为"你"。
-                      4. 有强烈的反对意图，有故意贬低别人的意味。
-                      5. 请必须保证场景简洁且真实，请勿出现明显的人物，例如小李等代名词。
-                      6. 严格遵循规则: 请严格以如下格式返回生成的数据, 确保只返回JSON格式，json模板:  
-                            {{"场景": "AAA"}}
-                        其中AAA代表对应关键字的场景
-    """
+        
     def generate(self, key_word="讽刺"):
         response = self.model.chat.completions.create(
             # model="glm-4",
             model="glm-4-plus",
             messages=[
                 {"role": "system", "content": Template.Dui_TOPIC_GENERATE_DATA_TEMPLATE},
-                {"role": "user", "content": f'''
-                目标: 1. 请生成一个和""{key_word}""这句话最符合的场景，只生成场景。
-                    2. 你需要结合这句话思考最合适的场景，同时确保生成的场景多样化。
-                    3. 请保证这个场景的质量，只生成一个场景。
-                    4. 具有强烈反对意图，带有故意贬低或讽刺的意味。
-                    5. 请保证场景简洁且真实，无需出现特定地点限制。
-                    6. 请勿使用明显的人物代名词。
-                    7. 请注意是你发现了某件事，然后你使用上面这句话讽刺他的场景。
-                    8. 严格遵循规则: 请严格以如下格式返回生成的数据, 确保只返回JSON格式，json模板:
-                    {{"场景": "AAA"}}
-                    其中AAA代表对应关键字的场景'''},
+                {"role": "user", "content": f''''''},
   
             ]
         )

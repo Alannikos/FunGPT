@@ -39,15 +39,7 @@ class MyChatGLM:
             model="glm-4",
             messages=[
                 {"role": "system", "content": Template.KUA_GENERATE_DATA_TEMPLATE},
-                {"role": "user", "content": f'''
-                目标: 1. 请生成""{question}""为场景的连续多轮对话记录
-                      2. 严格遵循, 请以如下格式返回生成的数据, 只返回JSON格式，json模板:  
-                            [  
-                                {{
-                                    "input":"AAA","output":"BBBB" 
-                                }}
-                            ] 
-                         其中input字段表示正常提问者, output字段表示马屁精'''},
+                {"role": "user", "content": f''''''},
             ]
         )
         return response
