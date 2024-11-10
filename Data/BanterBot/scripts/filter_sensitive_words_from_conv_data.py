@@ -1,6 +1,10 @@
-import json
 import os
+import sys
+import json
 from tqdm import tqdm
+
+sys.path.append("/root/Project_FunGPT/FunGPT/")
+from Utils.configs import Config
 
 def load_sensitive_words(folder_path):
     """
@@ -70,9 +74,9 @@ def filter_sensitive_conversations(data, sensitive_words):
 
 def main():
     # 配置路径
-    sensitive_words_folder = "/FunGPT/Data/Dui_LLM/sensitive_words/words"
-    input_file = "/FunGPT/Data/Kua_LLM/sample/multi_conversation_1.jsonl"
-    output_file = "/FunGPT/Data/Dui_LLM/feasible_data/ft_data_1_filtered.json"
+    sensitive_words_folder = Config.PROJECT_PATH / "Data/Dui_LLM/sensitive_words/words"
+    input_file = Config.PROJECT_PATH / "Data/Kua_LLM/sample/multi_conversation_1.jsonl"
+    output_file = Config.PROJECT_PATH / "Data/Dui_LLM/feasible_data/ft_data_1_filtered.json"
     
     # 1. 加载敏感词
     try:

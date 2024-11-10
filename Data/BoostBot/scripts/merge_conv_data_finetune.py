@@ -1,6 +1,10 @@
 import os
+import sys
 import json
 from tqdm import tqdm
+
+sys.path.append("/root/Project_FunGPT/FunGPT/")
+from Utils.configs import Config
 
 # 合并json文件
 def merge_json_files(input_folder, output_file):
@@ -20,6 +24,6 @@ def merge_json_files(input_folder, output_file):
 
 if __name__ == "__main__":
 
-    input_folder = "/FunGPT/Data/BoostBot/sample"  # 存放 JSON 文件的文件夹路径
-    output_file = "/FunGPT/Data/BoostBot/feasible_data/ft_data_all.jsonl"  # 合并后的 JSON 文件路径
+    input_folder = Config.PROJECT_PATH / "Data/BoostBot/sample"  # 存放 JSON 文件的文件夹路径
+    output_file = Config.PROJECT_PATH / "Data/BoostBot/feasible_data/ft_data_all.jsonl"  # 合并后的 JSON 文件路径
     merge_json_files(input_folder, output_file)

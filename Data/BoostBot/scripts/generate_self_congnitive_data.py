@@ -1,6 +1,5 @@
 import sys
 import json
-sys.path.append("/FunGPT/LLM")
 
 KUA_GENERATE_DATA_TEMPLATE = \
 """

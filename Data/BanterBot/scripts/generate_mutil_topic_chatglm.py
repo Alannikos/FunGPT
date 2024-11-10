@@ -6,10 +6,10 @@ import random
 import logging
 from tqdm import tqdm
 from zhipuai import ZhipuAI
-sys.path.append("/FunGPT")
 
+sys.path.append("/root/Project_FunGPT/FunGPT/")
 from LLM.templates.template import Template
-
+from Utils.configs import Config
 
 class MyChatGLM:
     def __init__(self, api_key):
@@ -50,7 +50,7 @@ def postprocessing(topic_data):
 
 def save_question_to_json(data):
     # 将数据保存为JSONL文件
-    with open('FunGPT/Data/Dui_LLM/raw/scene.json', 'w', encoding='utf-8') as f:
+    with open(Config.PROJECT_PATH / "Data/Dui_LLM/raw/scene.json", 'w', encoding='utf-8') as f:
         
         # for item in data:
         #     json_str = json.dumps(item, ensure_ascii=False)
@@ -66,7 +66,7 @@ def main():
     # 场景数据集合
     res = []
 
-    with open('FunGPT/Data/Dui_LLM/raw/key_word.txt', 'r', encoding='utf-8') as file:
+    with open(Config.PROJECT_PATH / 'Data/Dui_LLM/raw/key_word.txt', 'r', encoding='utf-8') as file:
         lines_list = file.readlines()
         # 去掉每行末尾的换行符
         keywords = [line.strip() for line in lines_list]

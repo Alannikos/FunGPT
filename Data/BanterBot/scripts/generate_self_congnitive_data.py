@@ -1,6 +1,5 @@
 import sys
 import json
-sys.path.append("/FunGPT/LLM")
 
 DUI_GENERATE_DATA_TEMPLATE = \
 """

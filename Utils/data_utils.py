@@ -6,8 +6,9 @@ from dataclasses import asdict
 import streamlit as st
 from audio_recorder_streamlit import audio_recorder
 
-sys.path.append("/root/Project_FunGPT/Developing")
+sys.path.append("/root/Project_FunGPT/FunGPT")
 from Utils.common_utils import get_avatar, combine_history, combine_history_p2
+
 
 def get_audio_input():
     with st.sidebar:

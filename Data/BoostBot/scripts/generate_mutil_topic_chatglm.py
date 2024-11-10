@@ -6,9 +6,10 @@ import random
 import logging
 from tqdm import tqdm
 from zhipuai import ZhipuAI
-sys.path.append("/root/Project_FunGPT/Developing/")
 
+sys.path.append("/root/Project_FunGPT/FunGPT/")
 from LLM.templates.template import Template
+from Utils.configs import Config
 
 
 class MyChatGLM:
@@ -39,7 +40,7 @@ def postprocessing(topic_data):
 
 def save_question_to_json(data):
     # 将数据保存为JSONL文件
-    with open('/root/Project_FunGPT/Developing/Data/Kua_LLM/raw/question_100_plus.json', 'w', encoding='utf-8') as f:
+    with open(Config.PROJECT_PATH / 'Data/Kua_LLM/raw/question_100_plus.json', 'w', encoding='utf-8') as f:
         
         # for item in data:
         #     json_str = json.dumps(item, ensure_ascii=False)

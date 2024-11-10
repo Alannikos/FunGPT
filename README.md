@@ -23,7 +23,8 @@ _____________________________________________________________________
 - \[2024/10/03\] 🎨🐞 Spruce up the interface to make it more visually appealing and fix some known bugs.
 - \[2024/10/19\] 🎉💬 Completed the generation of conversation topics and the dialogue data using LLM
 - \[2024/10/28\] 🎈🥳 complete the configuration for finetuning in XTuner, and now it's time to release the first version of our awesome [Kua_LLM](https://huggingface.co/Alannikos768/Kua_LLM)!
-
+- \[2024/11/10\] 🛠️🎯 Major project update completed, successfully fixed absolute path bug issues~
+- \[2024/11/10\] 🎉✨ Exciting launch of two new models! Welcoming new members to the FunGPT family: [BanterBot](https://huggingface.co/Alannikos768/BanterBot) and [BoostBot](https://huggingface.co/Alannikos768/BoostBot).
 
 </details>
 

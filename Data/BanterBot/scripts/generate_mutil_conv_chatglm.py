@@ -6,9 +6,10 @@ import random
 import logging  
 from tqdm import tqdm
 from zhipuai import ZhipuAI
-sys.path.append("/FunGPT")
 
+sys.path.append("/root/Project_FunGPT/FunGPT/")
 from LLM.templates.template import Template
+from Utils.configs import Config
 
 """
 数据格式：
@@ -152,7 +153,7 @@ def postprocessing(conversation_data):
 
 def save_dialogue_to_jsonl(data):
     # 将数据保存为JSONL文件
-    with open('/FunGPT/Data/Dui_LLM/sample/dui_multi_conversation_1.jsonl', 'w', encoding='utf-8') as f:
+    with open(Config.PROJECT_PATH / 'Data/Dui_LLM/sample/dui_multi_conversation_1.jsonl', 'w', encoding='utf-8') as f:
 
         # for item in data:
         #     json_str = json.dumps(item, ensure_ascii=False)
@@ -170,7 +171,7 @@ def main():
 
 
     # 2. 遍历获取到的每个问题
-    with open("/FunGPT/Data/Dui_LLM/raw/scene.json", 'r', encoding='utf-8') as file:
+    with open(Config.PROJECT_PATH / "Data/Dui_LLM/raw/scene.json", 'r', encoding='utf-8') as file:
         data = json.load(file)
 
         # 依次读取每一个数据

@@ -2,9 +2,10 @@ import sys
 import requests
 import streamlit as st
 
-sys.path.append("/root/Project_FunGPT/Developing/")
+sys.path.append("/root/Project_FunGPT/FunGPT/")
 
 from LLM.templates.template import Template
+from Utils.configs import Config
 
 user_prompt = '<|im_start|>user\n{user}<|im_end|>\n'
 robot_prompt = '<|im_start|>assistant\n{robot}<|im_end|>\n'
@@ -95,7 +96,7 @@ def combine_history_p2(prompt):
 
 def get_avatar(identifier):
     # 返回头像
-    return f"/root/Project_FunGPT/Developing/Assets/avatar/{identifier}.png"
+    return f"{Config.PROJECT_PATH}" + "Assets/avatar/{identifier}.png"
 
 def load_lottieurl(url: str):
     r = requests.get(url)

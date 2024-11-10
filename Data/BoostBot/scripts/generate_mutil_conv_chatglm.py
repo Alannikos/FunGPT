@@ -4,9 +4,10 @@ import sys
 import json
 import logging  
 from zhipuai import ZhipuAI
-sys.path.append("/root/Project_FunGPT/Developing/")
 
+sys.path.append("/root/Project_FunGPT/FunGPT/")
 from LLM.templates.template import Template
+from Utils.configs import Config
 
 """
 数据格式：
@@ -61,7 +62,7 @@ def postprocessing(conversation_data):
 
 def save_dialogue_to_jsonl(data):
     # 将数据保存为JSONL文件
-    with open('/root/Project_FunGPT/Developing/Data/Kua_LLM/sample/multi_conversation.jsonl', 'w', encoding='utf-8') as f:
+    with open(Config.PROJECT_PATH / 'Data/Kua_LLM/sample/multi_conversation.jsonl', 'w', encoding='utf-8') as f:
         
         # for item in data:
         #     json_str = json.dumps(item, ensure_ascii=False)
@@ -78,7 +79,7 @@ def main():
     res = []
 
     # 2. 遍历获取到的每个问题
-    with  open("/root/Project_FunGPT/Developing/Data/Kua_LLM/raw/question.txt",  "r") as f:
+    with  open(Config.PROJECT_PATH / "Data/Kua_LLM/raw/question.txt",  "r") as f:
         # 依次读取每一行数据
         for question in f:
             question = question.strip()

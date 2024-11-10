@@ -1,4 +1,5 @@
 # Copyright (c) OpenMMLab. All rights reserved.
+import sys
 import torch
 from datasets import load_dataset
 from mmengine.dataset import DefaultSampler
@@ -20,16 +21,20 @@ from xtuner.model import SupervisedFinetune
 from xtuner.parallel.sequence import SequenceParallelSampler
 from xtuner.utils import PROMPT_TEMPLATE, SYSTEM_TEMPLATE
 
+sys.path.append("/root/Project_FunGPT/FunGPT/")
+from Utils.configs import Config
+
+
 #######################################################################
 #                          PART 1  Settings                           #
 #######################################################################
 # Model
 # 模型路径
-pretrained_model_name_or_path = '/root/Project_FunGPT/Developing/Finetune/model/internlm2_5-7b-chat'
+pretrained_model_name_or_path = Config.PROJECT_PATH + '/Finetune/BaseModel/internlm2_5-7b-chat'
 use_varlen_attn = False
 
 # 微调数据路径
-custom_data_path = '/root/Project_FunGPT/Developing/Data/Kua_LLM/feasible_data/ft_data_1.jsonl'
+custom_data_path = Config.PROJECT_PATH + '/Data/BoostBot/feasible_data/ft_data_all.jsonl'
 prompt_template = PROMPT_TEMPLATE.internlm2_chat
 max_length = 2048
 pack_to_max_length = True

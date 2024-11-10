@@ -5,8 +5,7 @@ description:
 """
 import os
 import sys
-sys.path.append("/root/Project_FunGPT/Developing")
-
+sys.path.append("/root/Project_FunGPT/FunGPT/")
 import copy
 import warnings
 from typing import Callable, List, Optional
@@ -22,6 +21,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from Utils.model_settings import GenerationConfig
 logger = logging.get_logger(__name__)
 
+
+from Utils.configs import Config
 
 
 class InternLM:
@@ -195,7 +196,7 @@ class InternLM:
 
 
 def test():
-    llm = InternLM(mode='offline',model_path='/root/Project_FunGPT/Developing/LLM/weights/internlm2_5-1_8b-chat')
+    llm = InternLM(mode='offline',model_path=Config.PROJECT_PATH / 'LLM/weights/internlm2_5-1_8b-chat')
     answer = llm.generate("请介绍一下你自己")
     print(answer)
 

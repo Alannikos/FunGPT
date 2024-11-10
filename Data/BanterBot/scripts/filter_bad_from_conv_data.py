@@ -1,7 +1,11 @@
-import json
 import os
+import sys
+import json
 from tqdm import tqdm
 
+sys.path.append("/root/Project_FunGPT/FunGPT/")
+
+from Utils.configs import Config
 
 def filter_bad_conversations(data):
     filtered_data = []
@@ -35,8 +39,8 @@ def filter_bad_conversations(data):
 
 def main():
     # 配置路径
-    input_file = "/FunGPT/Data/Kua_LLM/feasible_data/ft_data_all.json"
-    output_file = "/FunGPT/Data/Dui_LLM/feasible_data/ft_data_all_filtered.json"
+    input_file = Config.PROJECT_PATH / "Data/Kua_LLM/feasible_data/ft_data_all.json"
+    output_file =  Config.PROJECT_PATH / "Data/Dui_LLM/feasible_data/ft_data_all_filtered.json"
     
     # 2. 加载JSON数据
     try:

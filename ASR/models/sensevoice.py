@@ -1,5 +1,6 @@
 import io
 import re
+import sys
 import numpy as np
 import soundfile as sf
 from pathlib import Path
@@ -9,6 +10,8 @@ from funasr import AutoModel
 from funasr.utils.postprocess_utils import rich_transcription_postprocess
 from audio_recorder_streamlit import audio_recorder
 
+sys.path.append("/root/Project_FunGPT/FunGPT/")
+from Utils.configs import Config
 
 class Sensevoice:
     def __init__(self, model_path):
@@ -48,8 +51,8 @@ class Sensevoice:
 
         new_text = re.sub("<.*?>", "", texts[0]["text"])
         return new_text
-    
+
 if __name__ == "__main__":
-    model_path = "/root/Project_FunGPT/Developing/ASR/weights/SenseVoiceSmall"
+    model_path = Config.PROJECT_PATH / "ASR/weights/SenseVoiceSmall"
     model = Sensevoice(model_path=model_path)
-    print(model.generate('/root/Project_FunGPT/Developing/Data/ASR/aaa.wav'))
+    print(model.generate("/root/Project_FunGPT/FunGPT/Test/ASR/test_wav.wav"))
