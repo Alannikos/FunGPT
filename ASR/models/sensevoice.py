@@ -15,12 +15,18 @@ class Sensevoice:
         self.load_model(model_path)
 
     def load_model(self, model_path):
+        """
+        加载sensevoice模型
+        """
         self.model = AutoModel(model=model_path,
                         vad_model="fsmn-vad",
                         vad_kwargs={"max_single_segment_time": 30000},
                         trust_remote_code=True, device="cuda:0")
 
     def save_wavs(self, wav_bytes):
+        """
+        保存语音（用户输入）
+        """
         save_file = datetime.now().strftime("%Y-%m-%d-%H-%M-%S") + ".wav"
         wav_save_path = str(Path("./Work_dirs/ASR").joinpath(save_file).absolute())
         
@@ -43,8 +49,6 @@ class Sensevoice:
         new_text = re.sub("<.*?>", "", texts[0]["text"])
         return new_text
     
-    # def record_voice(self):
-
 if __name__ == "__main__":
     model_path = "/root/Project_FunGPT/Developing/ASR/weights/SenseVoiceSmall"
     model = Sensevoice(model_path=model_path)

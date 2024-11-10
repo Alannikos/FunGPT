@@ -3,7 +3,10 @@ import sys
 import streamlit as st
 
 def sidebar_content():
-
+    """
+    设置侧边栏组件
+    """
+    
     st.sidebar.markdown("### 欢迎关注")
 
     st.sidebar.markdown("""
