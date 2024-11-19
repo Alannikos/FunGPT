@@ -29,7 +29,8 @@ _____________________________________________________________________
 <details open>
 <summary><b>2024</b></summary>
 
-- [2024/11/18] 🌟🔧 Completed **Quick Start** section documentation updates and resolved environment setup bugs.
+- \[2024/11/19\] 🔒🛡️ Incorporate a sensitive word processing module to prevent the model from outputting harmful viewpoints.
+- [2024/11/18] 🔧🌟 Completed **Quick Start** section documentation updates and resolved environment setup bugs.
 - [2024/11/14] 🎉✨ Successfully quantized four models using the LMDeploy tool. The FunGPT family welcomes new members! Models are now available on [HuggingFace](https://huggingface.co/Alannikos768).
 - [2024/11/13] 🎉✨ Released two new 1.8B models, expanding the FunGPT family! The models are [BanterBot_1_8b-chat](https://huggingface.co/Alannikos768/BanterBot_1_8b-chat) and [BoostBot_1_8b-chat](https://huggingface.co/Alannikos768/BoostBot_1_8b-chat).
 - [2024/11/10] 🎉✨ Launched two brand-new 7B models, adding new members to the FunGPT family! The models are [BanterBot-7b-chat](https://huggingface.co/Alannikos768/BanterBot-7b-chat) and [BoostBot-7b-chat](https://huggingface.co/Alannikos768/BoostBot-7b-chat).

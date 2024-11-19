@@ -28,7 +28,8 @@ _____________________________________________________________________
 <details open>
 <summary><b>2024</b></summary>
 
-- \[2024/11/18\] 🌟🔧 完成**快速使用**部分的文档更新，解决关于环境搭建的bug。
+- \[2024/11/19\] 🔒🛡️ 加入敏感词处理模块，防止模型输出有害观点 
+- \[2024/11/18\] 🔧🌟 完成**快速使用**部分的文档更新，解决关于环境搭建的bug。
 - \[2024/11/14\] 🎉✨ 利用LMDeploy工具完成对四个模型的量化工作，FunGPT家族喜添新成员！模型已发布在[HuggingFace](https://huggingface.co/Alannikos768)。
 - \[2024/11/13\] 🎉✨ 项目推出两款1.8B模型，FunGPT家族喜添新成员！模型分别为[BanterBot_1_8b-chat](https://huggingface.co/Alannikos768/BanterBot_1_8b-chat)，以及[BoostBot_1_8b-chat](https://huggingface.co/Alannikos768/BoostBot_1_8b-chat)。
 - \[2024/11/10\] 🎉✨ 重磅推出两款全新7B模型，FunGPT家族喜添新成员！模型分别为[BanterBot-7b-chat](https://huggingface.co/Alannikos768/BanterBot-7b-chat)，以及[BoostBot-7b-chat](https://huggingface.co/Alannikos768/BoostBot-7b-chat)。

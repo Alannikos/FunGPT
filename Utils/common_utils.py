@@ -1,6 +1,9 @@
 import sys
 import requests
 import streamlit as st
+import jieba
+import pickle
+from flashtext import KeywordProcessor
 
 sys.path.append("/root/Project_FunGPT/FunGPT/")
 
@@ -12,7 +15,47 @@ robot_prompt = '<|im_start|>assistant\n{robot}<|im_end|>\n'
 cur_query_prompt = '<|im_start|>user\n{user}<|im_end|>\n\
     <|im_start|>assistant\n'
 
+
+class SecureSystem:
+    """
+    敏感词检测模块
+    """
+
+    def __init__(self):
+        self.sensitive_path = Config.PROJECT_PATH / "Data/BanterBot/sensitive_words/sensitive_words.pkl"
+
+        # 加载词库
+        self.load_words()
+
+    def load_words(self):
+        with open(self.sensitive_path, 'rb') as f:
+            sensitive_words = pickle.load(f)
+
+        self.sensitive_words = sensitive_words
+
+    def tokenize(self, text):
+        """
+        对输入进行分词
+        """
+        tokenized_text = " ".join(jieba.cut(text))
+        return tokenized_text
+
+    def check(self, text):
+        """
+        进行检测
+        """
+
+        tokenized_text = self.tokenize(text)
+
+        processor = KeywordProcessor()
+        processor.add_keywords_from_list(self.sensitive_words)
+        isContain = len(processor.extract_keywords(tokenized_text)) > 0
+        return isContain
+
 def initialize_session_state():
+    if "SecureSystem" not in st.session_state:
+        st.session_state.SecureSystem = SecureSystem()
+
     if "LLM_Model" not in st.session_state:
         st.session_state.LLM_Model = None
     if "ASR_Model" not in st.session_state:
@@ -54,6 +97,9 @@ def combine_history(prompt):
     return total_prompt
 
 def initialize_session_state_p2():
+    if "SecureSystem" not in st.session_state:
+        st.session_state.SecureSystem = SecureSystem()
+        
     if "LLM_Model_p2" not in st.session_state:
         st.session_state.LLM_Model_p2 = None
     if "ASR_Model_p2" not in st.session_state:

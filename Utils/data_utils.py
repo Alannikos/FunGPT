@@ -9,7 +9,6 @@ from audio_recorder_streamlit import audio_recorder
 sys.path.append("/root/Project_FunGPT/FunGPT")
 from Utils.common_utils import get_avatar, combine_history, combine_history_p2
 
-
 def get_audio_input():
     with st.sidebar:
         st.markdown("---")
@@ -68,9 +67,15 @@ def get_audio_input():
     return None
 
 def show_dialog_interface(user_input, mode=1):
-    
+
     # 如果有用户输入,处理它
     if user_input:
+        # 进行敏感词检测
+        if st.session_state.SecureSystem.check(user_input):
+            st.chat_message('user', avatar=get_avatar("User_v1")).markdown(user_input)
+            st.chat_message('robot', avatar=get_avatar("BoostBot" if mode==1 else "BanterBot")).markdown("⚠️ 您输入的内容含有敏感词，请修改后再试。")
+            return
+
         with st.chat_message('user', avatar=get_avatar("User_v1")):
             st.markdown(user_input)
         if mode == 1:
