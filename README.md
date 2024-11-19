@@ -84,24 +84,24 @@ $\quad$ Our advantages include, but are not limited to:
 
 <div align="center">
   <!-- 第一行：BoostBot对比 -->
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 20px;">
-    <div style="flex: 1; min-width: 300px; max-width: 400px;">
+  <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+    <div style="width: 45%;">
       <p align="center"><b>Original_7b_BoostBot</b></p>
       <img src="./Assets/gif/Original_7b_BoostBot.gif" width="100%">
     </div>
-    <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <div style="width: 45%;">
       <p align="center"><b>BoostBot-7b</b></p>
       <img src="./Assets/gif/BoostBot-7b.gif" width="100%">
     </div>
   </div>
 
   <!-- 第二行：BanterBot对比 -->
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-    <div style="flex: 1; min-width: 300px; max-width: 400px;">
+  <div style="display: flex; justify-content: center; gap: 20px;">
+    <div style="width: 45%;">
       <p align="center"><b>Original_7b_BanterBot</b></p>
       <img src="./Assets/gif/Original_7b_BanterBot.gif" width="100%">
     </div>
-    <div style="flex: 1; min-width: 300px; max-width: 400px;">
+    <div style="width: 45%;">
       <p align="center"><b>BanterBot-7b</b></p>
       <img src="./Assets/gif/BanterBot-7b.gif" width="100%">
     </div>
