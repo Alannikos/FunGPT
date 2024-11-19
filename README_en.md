@@ -85,13 +85,13 @@ $\quad$ Our advantages include, but are not limited to:
 <div align="center">
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">Original_7b_BoostBot</p>
-    <video src="/root/Project_FunGPT/FunGPT/Assets/video/Original_7b_BoostBot.mp4" controls width="100%">
+    <video src="/FunGPT/Assets/video/Original_7b_BoostBot.mp4" controls width="100%">
     您的浏览器不支持 video 标签。
     </video>
   </div>
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">BoostBot-7b</p>
-    <video src="/root/Project_FunGPT/FunGPT/Assets/video/BoostBot-7b.mp4" controls width="100%">
+    <video src="/FunGPT/Assets/video/BanterBot-7b.mp4" controls width="100%">
     您的浏览器不支持 video 标签。
     </video>
   </div>
@@ -100,18 +100,17 @@ $\quad$ Our advantages include, but are not limited to:
 <div align="center">
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">Original_7b_BanterBot</p>
-    <video src="/root/Project_FunGPT/FunGPT/Assets/video/Original_7b_BanterBot.mp4" controls width="100%">
+    <video src="/FunGPT/Assets/video/Original_7b_BanterBot.mp4" controls width="100%">
     您的浏览器不支持 video 标签。
     </video>
   </div>
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">BanterBot-7b</p>
-    <video src="/root/Project_FunGPT/FunGPT/Assets/video/BanterBot-7b.mp4" controls width="100%">
+    <video src="/FunGPT/Assets/video/BanterBot-7b.mp4" controls width="100%">
     您的浏览器不支持 video 标签。
     </video>
   </div>
 </div>
-
 
 
 # 🏗️ Project Architecture Diagram
