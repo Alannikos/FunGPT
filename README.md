@@ -66,7 +66,7 @@ _____________________________________________________________________
 
 $\quad$**FunGPT** is built on the cutting-edge InternLM2.5 series models. Using Xtuner, we performed both instruction and full fine-tuning, enabling the models to meet personalized user needs. To enhance accessibility, we released the 1.8B series of lightweight models, which deliver exceptional performance despite their reduced size. Additionally, we employed **AWQ quantization** using LMDeploy on multiple models, saving GPU memory while boosting inference speed! ⚡
 
-$\quad$ This project caters to everyday users by focusing on the two scenarios of praise and roasting, allowing users to chat with our two "Masters" to regulate their moods. For developers just entering the world of LLMs, we provide extensive documentation and video tutorials covering LLM, ASR, and TTS, making this project an ideal entry point for mastering large model development skills.
+$\quad$ This project caters to every users by focusing on the two scenarios of praise and roasting, allowing users to chat with our two "Masters" to regulate their moods. For developers just entering the world of LLMs, we provide extensive documentation and video tutorials covering LLM, ASR, and TTS, making this project an ideal entry point for mastering large model development skills.
 
 $\quad$ Our advantages include, but are not limited to:
 
@@ -80,7 +80,7 @@ $\quad$ Our advantages include, but are not limited to:
 8. ⚡ **Model Quantization**: Lower the usage barrier and experience the magic of AI anytime, anywhere.
 9. 🎥 **Video Tutorials**: Stay tuned for our complete project introduction videos!
 
-# 🖼️ Renderings
+# 🖼️ Screenshots
 
 |Original_7b_BoostBot|BoostBot-7b|
 |:---:|:---:|
