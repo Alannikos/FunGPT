@@ -96,7 +96,7 @@ def combine_history_p2(prompt):
 
 def get_avatar(identifier):
     # 返回头像
-    return f"{Config.PROJECT_PATH}" + "Assets/avatar/{identifier}.png"
+    return f"{Config.PROJECT_PATH}" + "Assets/avatar/{identifier}.jpg"
 
 def load_lottieurl(url: str):
     r = requests.get(url)

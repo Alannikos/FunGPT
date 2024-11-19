@@ -33,9 +33,9 @@ def main():
     with col2:
         # 添加空白实现对齐
         st.markdown("<div style='height:37px;'></div>", unsafe_allow_html=True)
-        st.info("🌟 你的微笑点亮了我的一天！")
-        st.success("✨ 你总是如此专注，令人敬佩！")
-        st.warning("🔥 你的创意总是令人惊叹！")
+        st.info("💥 别自欺欺人了，直面现实吧！")
+        st.warning("⚔️ 你的借口听起来就像泡沫，一戳就破！")
+        st.error("💢 你的想法太天真，现实可不是童话书！")
 
     # 在文本和分隔线之间的空白
     st.markdown("<div style='height:20px;'></div>", unsafe_allow_html=True)
@@ -106,7 +106,8 @@ def main():
     # 初始化模型
     if llm_config["use"] and (st.session_state.LLM_Model is None or st.session_state.llm_config != llm_config):
         loading_placeholder.info("正在加载LLM模型...")
-        st.session_state.LLM_Model = init_LLM_Model(model_path=Config.PROJECT_PATH + "LLM/weights/internlm2_5-7b-chat")
+        st.session_state.LLM_Model = init_LLM_Model(model_path=Config.PROJECT_PATH / 'LLM/weights/internlm2_5-7b-chat')
+
         st.session_state.llm_config = llm_config
         loading_placeholder.success("LLM模型加载完成！")
         time.sleep(1)
@@ -115,7 +116,7 @@ def main():
     if asr_config["use"] and (st.session_state.ASR_Model is None or st.session_state.asr_config != asr_config):
         loading_placeholder.info("正在加载ASR模型...")
         # time.sleep(2)
-        st.session_state.ASR_Model = init_ASR_Model(Config.PROJECT_PATH + "ASR/weights/SenseVoiceSmall")
+        st.session_state.ASR_Model = init_ASR_Model(Config.PROJECT_PATH / "ASR/weights/SenseVoiceSmall")
         st.session_state.asr_config = asr_config
         loading_placeholder.success("ASR模型加载完成！")
         time.sleep(1)
@@ -123,15 +124,15 @@ def main():
 
     if tts_config["use"] and (st.session_state.TTS_Model is None or st.session_state.tts_config != tts_config):
         loading_placeholder.info("正在加载TTS模型...")
-        st.session_state.TTS_Model = init_TTS_Model(Config.PROJECT_PATH + "TTS/weights/ChatTTS")
         st.session_state.tts_config = tts_config
+        st.session_state.TTS_Model = init_TTS_Model(Config.PROJECT_PATH / 'TTS/weights/ChatTTS', st.session_state.tts_config['voice'])
         loading_placeholder.success("TTS模型加载完成！")
         time.sleep(1)
         loading_placeholder.empty()
 
     # 展示历史对话
     for message in st.session_state.chat_history:
-        with st.chat_message(message['role'], avatar=get_avatar("person2" if message['role'] == 'user' else "person1")):
+        with st.chat_message(message['role'], avatar=get_avatar("User_v1" if message['role'] == 'user' else "BanterBot")):
             st.markdown(message['content'])
             if 'wav_path' in message and message['wav_path'] is not None:
                 # 展示之前的语音输入结果

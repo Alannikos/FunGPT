@@ -9,12 +9,14 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 sys.path.append("/root/Project_FunGPT/Developing")
 
+from Utils.configs import Config
 from Utils.model_utils import init_LLM_Model, init_ASR_Model, init_TTS_Model
 from Utils.model_settings import llm_settings, asr_settings, tts_settings
 from Utils.common_utils import initialize_session_state
 from Utils.common_utils import get_avatar, combine_history, load_lottieurl
 from Utils.data_utils import get_audio_input, handle_user_input, show_dialog_interface
 from Utils.configs import Config
+
 def main():
     st.title("FunGPT  -  您的情感调酒师🍹")
 
@@ -106,7 +108,7 @@ def main():
     # 初始化模型
     if llm_config["use"] and (st.session_state.LLM_Model is None or st.session_state.llm_config != llm_config):
         loading_placeholder.info("正在加载LLM模型...")
-        st.session_state.LLM_Model = init_LLM_Model(model_path=Config.PROJECT_PATH + "LLM/weights/internlm2_5-7b-chat")
+        st.session_state.LLM_Model = init_LLM_Model(model_path=Config.PROJECT_PATH / 'LLM/weights/internlm2_5-7b-chat')
         st.session_state.llm_config = llm_config
         loading_placeholder.success("LLM模型加载完成！")
         time.sleep(1)
@@ -115,7 +117,7 @@ def main():
     if asr_config["use"] and (st.session_state.ASR_Model is None or st.session_state.asr_config != asr_config):
         loading_placeholder.info("正在加载ASR模型...")
         # time.sleep(2)
-        st.session_state.ASR_Model = init_ASR_Model(Config.PROJECT_PATH + "ASR/weights/SenseVoiceSmall")
+        st.session_state.ASR_Model = init_ASR_Model(Config.PROJECT_PATH / "ASR/weights/SenseVoiceSmall")
         st.session_state.asr_config = asr_config
         loading_placeholder.success("ASR模型加载完成！")
         time.sleep(1)
@@ -123,15 +125,15 @@ def main():
 
     if tts_config["use"] and (st.session_state.TTS_Model is None or st.session_state.tts_config != tts_config):
         loading_placeholder.info("正在加载TTS模型...")
-        st.session_state.TTS_Model = init_TTS_Model(Config.PROJECT_PATH + "TTS/weights/ChatTTS")
         st.session_state.tts_config = tts_config
+        st.session_state.TTS_Model = init_TTS_Model(Config.PROJECT_PATH / 'TTS/weights/ChatTTS', st.session_state.tts_config['voice'])
         loading_placeholder.success("TTS模型加载完成！")
         time.sleep(1)
         loading_placeholder.empty()
 
     # 展示历史对话
     for message in st.session_state.chat_history:
-        with st.chat_message(message['role'], avatar=get_avatar("person2" if message['role'] == 'user' else "person1")):
+        with st.chat_message(message['role'], avatar=get_avatar("User_v1" if message['role'] == 'user' else "BoostBot")):
             st.markdown(message['content'])
             if 'wav_path' in message and message['wav_path'] is not None:
                 # 展示之前的语音输入结果

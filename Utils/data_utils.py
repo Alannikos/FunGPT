@@ -71,19 +71,21 @@ def show_dialog_interface(user_input, mode=1):
     
     # 如果有用户输入,处理它
     if user_input:
-        with st.chat_message('user', avatar=get_avatar("person2")):
+        with st.chat_message('user', avatar=get_avatar("User_v1")):
             st.markdown(user_input)
         if mode == 1:
             new_history = combine_history(user_input)
+            avatar = "BoostBot"
         else:
             new_history = combine_history_p2(user_input)
+            avatar = "BanterBot"
         st.session_state.chat_history.append({'role': 'user', 'content': user_input})
 
         # 2024/10/1 异常处理机制
         model_placeholder = st.empty()
         try:
             wav_path = None
-            with st.chat_message('robot', avatar=get_avatar("person1")):
+            with st.chat_message('robot', avatar=get_avatar(avatar)):
                 message_placeholder = st.empty()
                 for cur_response in st.session_state.LLM_Model.generate(new_history, **asdict(st.session_state.llm_config['config'])):
                     message_placeholder.markdown(cur_response)
@@ -99,6 +101,7 @@ def show_dialog_interface(user_input, mode=1):
             st.session_state.chat_history.append({'role': 'robot', 'content': cur_response, 'wav_path': wav_path})
             torch.cuda.empty_cache()
         except Exception as e:
+            print(e)
             model_placeholder.info("❗LLM模型未加载或加载失败...")
             time.sleep(2)
             model_placeholder.empty()
