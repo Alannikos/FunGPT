@@ -77,104 +77,27 @@ $\quad$我们具有以下优势（包括但不局限于）：
 
 # 🖼️ 效果图
 
-<style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-        padding: 20px;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-    
-    .grid-item {
-        position: relative;
-        border-radius: 15px;
-        overflow: hidden;
-        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-        transition: all 0.3s ease;
-        background: #fff;
-        transform-origin: center;
-    }
-    
-    .grid-item:hover {
-        transform: scale(1.02);
-        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-    }
-    
-    .grid-item img {
-        width: 100%;
-        height: auto;
-        display: block;
-        transition: all 0.3s ease;
-    }
-    
-    .grid-item:hover img {
-        transform: scale(1.05);
-    }
-    
-    .title {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 15px;
-        background: linear-gradient(transparent, rgba(0,0,0,0.8));
-        color: white;
-        font-size: 1.2em;
-        text-align: center;
-        transform: translateY(100%);
-        transition: transform 0.3s ease;
-    }
-    
-    .grid-item:hover .title {
-        transform: translateY(0);
-    }
-    
-    @media (max-width: 768px) {
-        .grid-container {
-            grid-template-columns: 1fr;
-            padding: 10px;
-        }
-    }
-    
-    .grid-item::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: linear-gradient(45deg, rgba(0,255,255,0.2), rgba(255,0,255,0.2));
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        z-index: 1;
-    }
-    
-    .grid-item:hover::before {
-        opacity: 1;
-    }
-</style>
-
-<div class="grid-container">
-    <div class="grid-item">
-        <img src="./Assets/gif/Original_7b_BoostBot.gif" alt="Original_7b_BoostBot">
-        <div class="title">Original_7b_BoostBot</div>
-    </div>
-    <div class="grid-item">
-        <img src="./Assets/gif/BoostBot-7b.gif" alt="BoostBot-7b">
-        <div class="title">BoostBot-7b</div>
-    </div>
-    <div class="grid-item">
-        <img src="./Assets/gif/Original_7b_BanterBot.gif" alt="Original_7b_BanterBot">
-        <div class="title">Original_7b_BanterBot</div>
-    </div>
-    <div class="grid-item">
-        <img src="./Assets/gif/BanterBot-7b.gif" alt="BanterBot-7b">
-        <div class="title">BanterBot-7b</div>
-    </div>
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
+    <p align="center">Original_7b_BoostBot</p>
+    <img src="./Assets/gif/Original_7b_BoostBot.gif" width="100%">
+  </div>
+  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
+    <p align="center">BoostBot-7b</p>
+    <img src="./Assets/gif/BoostBot-7b.gif" width="100%">
+  </div>
 </div>
 
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
+    <p align="center">Original_7b_BanterBot</p>
+    <img src="./Assets/gif/Original_7b_BanterBot.gif" width="100%">
+  </div>
+  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
+    <p align="center">BanterBot-7b</p>
+    <img src="./Assets/gif/BanterBot-7b.gif" width="100%">
+  </div>
+</div>
 
 # 🏗️ 项目架构图
 
