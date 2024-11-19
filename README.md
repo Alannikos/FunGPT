@@ -85,30 +85,22 @@ $\quad$ Our advantages include, but are not limited to:
 <div align="center">
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">Original_7b_BoostBot</p>
-    <video src="FunGPT/Assets/video/Original_7b_BoostBot.mp4" controls width="100%">
-    您的浏览器不支持 video 标签。
-    </video>
+    <img src="/FunGPT/Assets/gif/Original_7b_BoostBot.gif" width="100%">
   </div>
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">BoostBot-7b</p>
-    <video src="FunGPT/Assets/video/BanterBot-7b.mp4" controls width="100%">
-    您的浏览器不支持 video 标签。
-    </video>
+    <img src="/FunGPT/Assets/gif/BanterBot-7b.gif" width="100%">
   </div>
 </div>
 
 <div align="center">
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">Original_7b_BanterBot</p>
-    <video src="FunGPT/Assets/video/Original_7b_BanterBot.mp4" controls width="100%">
-    您的浏览器不支持 video 标签。
-    </video>
+    <img src="/FunGPT/Assets/gif/Original_7b_BanterBot.gif" width="100%">
   </div>
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">BanterBot-7b</p>
-    <video src="FunGPT/Assets/video/BanterBot-7b.mp4" controls width="100%">
-    您的浏览器不支持 video 标签。
-    </video>
+    <img src="/FunGPT/Assets/gif/BanterBot-7b.gif" width="100%">
   </div>
 </div>
 
