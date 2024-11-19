@@ -333,25 +333,31 @@ $\quad$量化过程支持权重量化和激活值量化，并提供了量化后�
 
 非常感谢下列开源工具和开源项目的支持：
 
-- [InternlM-Tutorial](https://github.com/InternLM/Tutorial): $\quad$活跃且开源的大模型训练营。
-- [Xtuner](https://github.com/InternLM/xtuner)： $\quad\quad\quad\quad$用于模型训练和微调的工具。
-- [LMDeploy](https://github.com/InternLM/lmdeploy)：$\quad\quad\quad$用于模型量化和部署的工具。
-- [Streamlit](https://streamlit.io/)：$\quad\quad\quad\quad$高效构建AI应用的工具。
-- [DeepSpeed](https://github.com/microsoft/DeepSpeed)：  $\quad\quad\ $用于模型训练和推理加速的工具。
-- [Pytorch](https://pytorch.org/): $\quad\quad\quad\quad\ $广泛使用的深度学习框架。
+| 项目 | 描述 |
+|---|---|
+| [InternlM-Tutorial](https://github.com/InternLM/Tutorial) | 活跃且开源的大模型训练营 |
+| [Xtuner](https://github.com/InternLM/xtuner) | 用于模型训练和微调的工具 |
+| [LMDeploy](https://github.com/InternLM/lmdeploy) | 用于模型量化和部署的工具 |
+| [Streamlit](https://streamlit.io/) | 高效构建AI应用的工具 |
+| [DeepSpeed](https://github.com/microsoft/DeepSpeed) | 用于模型训练和推理加速的工具 |
+| [Pytorch](https://pytorch.org/) | 广泛使用的深度学习框架 |
 
----
+## 相关开源项目
 
-- [InternLM](https://github.com/InternLM/InternLM): $\quad\quad\quad\ \ $一系列先进的开源大语言模型。
-- [ChatTTS](https://github.com/2noise/ChatTTS): $\quad\quad\quad\ \ \ $一个文本转语音的开源项目。
-- [SenseVoice](https://github.com/FunAudioLLM/SenseVoice): $\quad\quad\ \ $一个由阿里巴巴出品的一个语音识别的开源项目。
-- [Linly-Talker](https://github.com/Kedreamix/Linly-Talker): $\quad\quad\ \ $一款关于人工智能系统的开源项目。
-- [Yanjie](https://github.com/Alannikos/Yanjie): $\quad\quad\quad\quad\ \ $一个关于促进英语学习的人工智能助手的开源项目。
-- [wulewule](https://github.com/xzyun2011/wulewule): $\quad\quad\quad\ $一个关于黑神话悟空的人工智能助手的开源项目。
+| 项目 | 描述 |
+|---|---|
+| [InternLM](https://github.com/InternLM/InternLM) | 一系列先进的开源大语言模型 |
+| [ChatTTS](https://github.com/2noise/ChatTTS) | 一个文本转语音的开源项目 |
+| [SenseVoice](https://github.com/FunAudioLLM/SenseVoice) | 一个由阿里巴巴出品的一个语音识别的开源项目 |
+| [Linly-Talker](https://github.com/Kedreamix/Linly-Talker) | 一款关于人工智能系统的开源项目 |
+| [Yanjie](https://github.com/Alannikos/Yanjie) | 一个关于促进英语学习的人工智能助手的开源项目 |
+| [wulewule](https://github.com/xzyun2011/wulewule) | 一个关于黑神话悟空的人工智能助手的开源项目 |
 
----
+## 特别鸣谢
 
-- [上海人工智能实验室](https://www.shlab.org.cn/): $\quad$感谢提供的技术支持以及平台支持
+| 机构 | 描述 |
+|---|---|
+| [上海人工智能实验室](https://www.shlab.org.cn/) | 感谢提供的技术支持以及平台支持 |
 
 # ⚖️ 免责声明
 
