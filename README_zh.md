@@ -80,22 +80,22 @@ $\quad$我们具有以下优势（包括但不局限于）：
 <div align="center">
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">Original_7b_BoostBot</p>
-    <img src="/FunGPT/Assets/gif/Original_7b_BoostBot.gif" width="100%">
+    <img src="FunGPT/Assets/gif/Original_7b_BoostBot.gif" width="100%">
   </div>
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">BoostBot-7b</p>
-    <img src="/FunGPT/Assets/gif/BanterBot-7b.gif" width="100%">
+    <img src="FunGPT/Assets/gif/BoostBot-7b.gif" width="100%">
   </div>
 </div>
 
 <div align="center">
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">Original_7b_BanterBot</p>
-    <img src="/FunGPT/Assets/gif/Original_7b_BanterBot.gif" width="100%">
+    <img src="FunGPT/Assets/gif/Original_7b_BanterBot.gif" width="100%">
   </div>
   <div style="display: inline-block; width: 45%; margin: 10px;">
     <p align="center">BanterBot-7b</p>
-    <img src="/FunGPT/Assets/gif/BanterBot-7b.gif" width="100%">
+    <img src="FunGPT/Assets/gif/BanterBot-7b.gif" width="100%">
   </div>
 </div>
 
