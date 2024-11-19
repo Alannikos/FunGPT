@@ -348,30 +348,36 @@ $\quad$ The quantization process supports weight quantization and activation val
 5. - [ ] Refine the text-to-speech module introduction section
 6. - [ ] Improve the speech recognition usage section
 
-
 # 🙏 Acknowledgments
 
-$\quad$ Thanks to the following open-source tools and projects for their support:
+Thanks to the following open-source tools and projects for their support:
 
-- [InternlM-Tutorial](https://github.com/InternLM/Tutorial): $\quad$ An active and open large model training camp.
-- [Xtuner](https://github.com/InternLM/xtuner): $\quad\quad\quad\quad$ Tool for model training and fine-tuning.
-- [LMDeploy](https://github.com/InternLM/lmdeploy): $\quad\quad\quad$ Tool for model quantization and deployment.
-- [Streamlit](https://streamlit.io/): $\quad\quad\quad\quad$ Tool for efficiently building AI applications.
-- [DeepSpeed](https://github.com/microsoft/DeepSpeed): $\quad\quad\ $ Tool for model training and inference acceleration.
-- [Pytorch](https://pytorch.org/): $\quad\quad\quad\quad\ $ Widely used deep learning framework.
+| Tool | Description |
+|---|---|
+| [InternlM-Tutorial](https://github.com/InternLM/Tutorial) | An active and open large model training camp |
+| [Xtuner](https://github.com/InternLM/xtuner) | Tool for model training and fine-tuning |
+| [LMDeploy](https://github.com/InternLM/lmdeploy) | Tool for model quantization and deployment |
+| [Streamlit](https://streamlit.io/) | Tool for efficiently building AI applications |
+| [DeepSpeed](https://github.com/microsoft/DeepSpeed) | Tool for model training and inference acceleration |
+| [Pytorch](https://pytorch.org/) | Widely used deep learning framework |
 
----
+## Related Projects
 
-- [InternLM](https://github.com/InternLM/InternLM): $\quad\quad\quad\ \ $ A series of advanced open-source large language models.
-- [ChatTTS](https://github.com/2noise/ChatTTS): $\quad\quad\quad\ \ \ $ An open-source text-to-speech project.
-- [SenseVoice](https://github.com/FunAudioLLM/SenseVoice): $\quad\quad\ \ $ A speech recognition open-source project by Alibaba.
-- [Linly-Talker](https://github.com/Kedreamix/Linly-Talker): $\quad\quad\ \ $ An open-source project on artificial intelligence systems.
-- [Yanjie](https://github.com/Alannikos/Yanjie): $\quad\quad\quad\quad\ \ $ An open-source project for enhancing English learning with an AI assistant.
-- [wulewule](https://github.com/xzyun2011/wulewule): $\quad\quad\quad\ $ An open-source project featuring an AI assistant themed on Black Myth: Wukong.
+| Project | Description |
+|---|---|
+| [InternLM](https://github.com/InternLM/InternLM) | A series of advanced open-source large language models |
+| [ChatTTS](https://github.com/2noise/ChatTTS) | An open-source text-to-speech project |
+| [SenseVoice](https://github.com/FunAudioLLM/SenseVoice) | A speech recognition open-source project by Alibaba |
+| [Linly-Talker](https://github.com/Kedreamix/Linly-Talker) | An open-source project on artificial intelligence systems |
+| [Yanjie](https://github.com/Alannikos/Yanjie) | An open-source project for enhancing English learning with an AI assistant |
+| [wulewule](https://github.com/xzyun2011/wulewule) | An open-source project featuring an AI assistant themed on Black Myth: Wukong |
 
----
+## Special Thanks
 
-- [Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/): $\quad$ Thanks for the technical and platform support.
+| Organization | Description |
+|---|---|
+| [Shanghai Artificial Intelligence Laboratory](https://www.shlab.org.cn/) | Thanks for the technical and platform support |
+
 # ⚖️ Disclaimer
 
 $\quad$ Thank you for your interest in and use of the FunGPT project. This project aims to provide users with an enjoyable and engaging interaction experience. Please be aware of the following points:
