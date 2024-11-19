@@ -82,25 +82,29 @@ $\quad$ Our advantages include, but are not limited to:
 
 # 🖼️ Renderings
 
-<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
-    <p align="center">Original_7b_BoostBot</p>
-    <img src="./Assets/gif/Original_7b_BoostBot.gif" width="100%">
+<div align="center">
+  <!-- 第一行：BoostBot对比 -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-bottom: 20px;">
+    <div style="flex: 1; min-width: 300px; max-width: 400px;">
+      <p align="center"><b>Original_7b_BoostBot</b></p>
+      <img src="./Assets/gif/Original_7b_BoostBot.gif" width="100%">
+    </div>
+    <div style="flex: 1; min-width: 300px; max-width: 400px;">
+      <p align="center"><b>BoostBot-7b</b></p>
+      <img src="./Assets/gif/BoostBot-7b.gif" width="100%">
+    </div>
   </div>
-  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
-    <p align="center">BoostBot-7b</p>
-    <img src="./Assets/gif/BoostBot-7b.gif" width="100%">
-  </div>
-</div>
 
-<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
-  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
-    <p align="center">Original_7b_BanterBot</p>
-    <img src="./Assets/gif/Original_7b_BanterBot.gif" width="100%">
-  </div>
-  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
-    <p align="center">BanterBot-7b</p>
-    <img src="./Assets/gif/BanterBot-7b.gif" width="100%">
+  <!-- 第二行：BanterBot对比 -->
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+    <div style="flex: 1; min-width: 300px; max-width: 400px;">
+      <p align="center"><b>Original_7b_BanterBot</b></p>
+      <img src="./Assets/gif/Original_7b_BanterBot.gif" width="100%">
+    </div>
+    <div style="flex: 1; min-width: 300px; max-width: 400px;">
+      <p align="center"><b>BanterBot-7b</b></p>
+      <img src="./Assets/gif/BanterBot-7b.gif" width="100%">
+    </div>
   </div>
 </div>
 
