@@ -82,25 +82,25 @@ $\quad$ Our advantages include, but are not limited to:
 
 # 🖼️ Renderings
 
-<div align="center">
-  <div style="display: inline-block; width: 45%; margin: 10px;">
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
     <p align="center">Original_7b_BoostBot</p>
-    <img src="/FunGPT/Assets/gif/Original_7b_BoostBot.gif" width="100%">
+    <img src="./Assets/gif/Original_7b_BoostBot.gif" width="100%">
   </div>
-  <div style="display: inline-block; width: 45%; margin: 10px;">
+  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
     <p align="center">BoostBot-7b</p>
-    <img src="/FunGPT/Assets/gif/BanterBot-7b.gif" width="100%">
+    <img src="./Assets/gif/BoostBot-7b.gif" width="100%">
   </div>
 </div>
 
-<div align="center">
-  <div style="display: inline-block; width: 45%; margin: 10px;">
+<div align="center" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
     <p align="center">Original_7b_BanterBot</p>
-    <img src="/FunGPT/Assets/gif/Original_7b_BanterBot.gif" width="100%">
+    <img src="./Assets/gif/Original_7b_BanterBot.gif" width="100%">
   </div>
-  <div style="display: inline-block; width: 45%; margin: 10px;">
+  <div style="flex: 0 1 45%; min-width: 300px; max-width: 600px;">
     <p align="center">BanterBot-7b</p>
-    <img src="/FunGPT/Assets/gif/BanterBot-7b.gif" width="100%">
+    <img src="./Assets/gif/BanterBot-7b.gif" width="100%">
   </div>
 </div>
 
