@@ -15,7 +15,9 @@
 [![GitHub forks](https://img.shields.io/github/forks/Alannikos/FunGPT?style=flat&logo=github&color=%23FF9800)](https://github.com/Alannikos/FunGPT/forks)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Alannikos/FunGPT?style=flat&logo=github&color=%23FFEB3B)
 ![GitHub License](https://img.shields.io/github/license/Alannikos/FunGPT?style=flat&logo=github&color=%234CAF50)
-[![Discord](https://img.shields.io/discord/m4WdRCCU?style=flat&logo=discord&color=%235865F2)](https://discord.gg/jKRTNjD7)
+
+[![Discord](https://img.shields.io/discord/1308061124419260446?style=flat&logo=discord)](https://discord.com/channels/1308061124419260446/)
+
 [![TODO](https://img.shields.io/badge/update%20-todo-blue)](https://github.com/Alannikos/FunGPT)
 [![Bilibili](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Frelation%2Fstat%3Fvmid%3D3494365446015137&query=%24.data.follower&style=flat&logo=bilibili&label=followers&color=%23FF69B4)](https://space.bilibili.com/3494365446015137)
 [![OpenXLab_Model](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/Alannikos/BoostBot-7b-chat)
