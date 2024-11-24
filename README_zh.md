@@ -327,6 +327,8 @@ $\quad$量化过程支持权重量化和激活值量化，并提供了量化后�
 | [InternLM](https://github.com/InternLM/InternLM) | 一系列先进的开源大语言模型 |
 | [ChatTTS](https://github.com/2noise/ChatTTS) | 一个文本转语音的开源项目 |
 | [SenseVoice](https://github.com/FunAudioLLM/SenseVoice) | 一个由阿里巴巴出品的一个语音识别的开源项目 |
+| [LangGPT](https://github.com/langgptai/LangGPT) | 一个关于结构化提示词的开源项目 |
+| [GangLLM](https://github.com/boss-mao/GangLLM) | 一个关于与用户抬杠的开源项目 |
 | [Linly-Talker](https://github.com/Kedreamix/Linly-Talker) | 一款关于人工智能系统的开源项目 |
 | [Yanjie](https://github.com/Alannikos/Yanjie) | 一个关于促进英语学习的人工智能助手的开源项目 |
 | [wulewule](https://github.com/xzyun2011/wulewule) | 一个关于黑神话悟空的人工智能助手的开源项目 |

@@ -349,6 +349,8 @@ Thanks to the following open-source tools and projects for their support:
 | [InternLM](https://github.com/InternLM/InternLM) | A series of advanced open-source large language models |
 | [ChatTTS](https://github.com/2noise/ChatTTS) | An open-source text-to-speech project |
 | [SenseVoice](https://github.com/FunAudioLLM/SenseVoice) | A speech recognition open-source project by Alibaba |
+| [LangGPT](https://github.com/langgptai/LangGPT) | An open-source project about structured prompts. |
+| [GangLLM](https://github.com/boss-mao/GangLLM) |  An open-source project about engaging in banter with users |
 | [Linly-Talker](https://github.com/Kedreamix/Linly-Talker) | An open-source project on artificial intelligence systems |
 | [Yanjie](https://github.com/Alannikos/Yanjie) | An open-source project for enhancing English learning with an AI assistant |
 | [wulewule](https://github.com/xzyun2011/wulewule) | An open-source project featuring an AI assistant themed on Black Myth: Wukong |
