@@ -50,7 +50,7 @@ $\quad$在这个快节奏的世界里，我们都需要一点调味剂来调和�
 🍬 甜言蜜语模式：
 
 - **心情提升器🌟✨**：当您感到低落，我们的甜言蜜语模式能让您的心情瞬间飙升，就像尝了一颗超级甜的蜜糖。
-- **自信加油站💪🌈**：同时我们的**赞师傅**会用最合适且独特的方式夸奖您，让您的自信心爆棚。
+- **自信加油站💪🌈**：同时我们的**赞师傅**会用合适且独特的方式夸奖您，让您的自信心爆棚。
 
 🔪 犀利怼语模式：
 
@@ -59,19 +59,19 @@ $\quad$在这个快节奏的世界里，我们都需要一点调味剂来调和�
 
 # 🤔 项目亮点
 
-$\quad$**FunGPT**采用的是先进的InternLM2.5系列模型。我们利用Xtuner进行指令和全量微调，使模型能够满足用户的个性化要求。同时为了方便用户，我们发布了1.8B系列小模型，减量不减效果；此外，利用LMDeploy还对多个模型进行了**AWQ量化**操作，既节省显存又提升推理速度！⚡
+$\quad$**FunGPT**采用的是先进的InternLM2.5系列模型。我们利用[Xtuner](https://github.com/InternLM/xtuner)进行指令和全量微调，使模型能够满足用户的个性化要求。同时为了方便用户，我们发布了1.8B系列小模型，减量不减效果；此外，利用LMDeploy还对多个模型进行了**AWQ量化**操作，既节省显存又提升推理速度！⚡
 
-$\quad$在此项目中，我们对日常使用的用户，针对赞美和怼人这两个场景进行了针对性的考察，使得用户能够在日常生活中通过和我们的两位“师傅”进行交谈，达到调节心情的目的；此外，对于初入LLM世界的开发者，我们在LLM，ASR以及TTS方面都拥有丰富的文档与视频支持，希望此项目能够成为引领各位大佬进阶AI世界的第一个入门项目，帮助各位快速掌握大模型开发技能。
+$\quad$在此项目中，我们对日常使用的用户，针对赞美和怼人这两个场景进行了针对性的考察，使得用户能够在日常生活中通过和我们的两位“师傅”进行交谈，达到调节心情的目的；此外，对于初入LLM世界的开发者，我们在LLM，ASR以及TTS方面都拥有文档与视频支持，希望此项目能够成为引领各位大佬进阶AI世界的第一个入门项目，帮助各位快速掌握大模型开发技能。
 
 $\quad$我们具有以下优势（包括但不局限于）：
 
   1. 🤗 **夸人高手**：生成甜言蜜语，陪伴您生活的每一天。
   2. 🗯️ **怼人大师**：针对性应答，妙语连珠，与“我”斗智斗勇。
-  3. 📊 **数据收集指南**：完全开源，帮你快速掌握微调数据制作。
-  4. 📖 **LLM全流程指南**：完整代码与文档，100%开源，带你轻松入门。
-  5. 🔊 **ASR全流程指南**：开源一切，助力你实现语音识别梦想。
-  6. 🎙️ **TTS全流程指南**：从基础到进阶，全程开源，不藏私！
-  7. 📂 **结构清晰**：详细注释与解释文档，让你无障碍上手！
+  3. 📊 **数据收集指南**：开源核心流程及代码，帮你快速掌握微调数据制作。
+  4. 📖 **LLM全流程指南**：开源LLM模块代码，带你轻松入门。
+  5. 🔊 **ASR全流程指南**：开源ASR模块代码，助力你实现语音识别梦想。
+  6. 🎙️ **TTS全流程指南**：开源TTS模块代码，助力你实现语音合成梦想。
+  7. 📂 **结构清晰**：详细注释与解释文档，并且具有清晰的项目结构！
   8. ⚡ **模型量化**：降低使用门槛，随时随地体验AI的魅力。
   9. 🎥 **视频教程**：敬请期待我们的完整项目介绍视频！
 
@@ -216,7 +216,7 @@ git clone https://hf-mirror.com/FunAudioLLM/SenseVoiceSmall
 ```
 
 ##### 3.3.3 LLM模型(必选)
-$\quad$对于LLM模型的选择，我们提供了很多选择，效果最佳的模型为[BanterBot-7b-chat](https://openxlab.org.cn/models/detail/Alannikos/BanterBot-7b-chat/tree/main)和[BoostBot-7b-chat](https://openxlab.org.cn/models/detail/Alannikos/BoostBot-7b-chat/tree/main)，其次量化的模型效果也非常不错；对于1_8B模型，测试效果也是很不错的，此处为了节约大家的下载时间，我们选择了这两个1_8B模型: [BanterBot-1_8b-chat](https://openxlab.org.cn/models/detail/Alannikos/BanterBot-1_8b-chat/tree/main)和[BoostBot-1_8b-chat](https://openxlab.org.cn/models/detail/Alannikos/BoostBot-1_8b-chat/tree/main)来作为示例，大家可以按照需求自由进行替换即可。
+$\quad$对于LLM模型的选择，我们提供了很多选择，效果最佳的模型为[BanterBot-7b-chat](https://openxlab.org.cn/models/detail/Alannikos/BanterBot-7b-chat/tree/main)和[BoostBot-7b-chat](https://openxlab.org.cn/models/detail/Alannikos/BoostBot-7b-chat/tree/main)，其次量化的模型效果也非常不错；此处为了节约大家的下载时间，我们选择了这两个1_8B模型: [BanterBot-1_8b-chat](https://openxlab.org.cn/models/detail/Alannikos/BanterBot-1_8b-chat/tree/main)和[BoostBot-1_8b-chat](https://openxlab.org.cn/models/detail/Alannikos/BoostBot-1_8b-chat/tree/main)来作为示例，大家可以按照需求自由进行替换即可。
 
 - 启动`LFS`
 ```
@@ -269,43 +269,45 @@ ssh -p 46411 user@ip -CNg -L 7860:127.0.0.1:7860 -o StrictHostKeyChecking=no
 # 📚 详细指南
 
 ### 数据生成指南
-$\quad$在大模型微调过程中，我们可以借助许多算法进行SFT，不论是通过原生的LoRA微调等技术，还是通过封装好的工具，比如[Xtuner](https://github.com/InternLM/xtuner)，[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)等，我们都需要准备高质量的微调数据，但是通过人工手动标注数据的成本较高，对于大部分个人开发者来说，效率还是比较低下，所以本项目采用智谱免费使用的ChatGLM4-Flash来生成我们所需要的多轮对话数据集，这样的方式简单且易于控制。通常来说，生成的数据集还是能够达到较好的微调效果，具体的数据生成指南可以参考docs里面的[data_generation_Usage](#)。
+$\quad$在大模型微调过程中，我们可以借助许多算法进行SFT，不论是通过原生的LoRA微调等技术，还是通过封装好的工具，比如[Xtuner](https://github.com/InternLM/xtuner)，[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)等，我们都需要准备高质量的微调数据，但是通过人工手动标注数据的成本较高，对于大部分个人开发者来说，效率还是比较低下，所以本项目采用智谱免费使用的[ChatGLM4-Flash](https://bigmodel.cn/)来生成我们所需要的多轮对话数据集，这样的方式简单且易于控制。通常来说，生成的数据集还是能够达到较好的微调效果，具体的数据生成指南可以参考[data_generation](/FunGPT/Data/Kua_LLM/scripts/generate_mutil_conv_chatglm.py)。
 
 $\quad$在我们的文档中，我们将主要介绍关于多轮对话数据集制作过程以及如何去构造自我认知数据集，通过这两部分数据集，基本可以微调出一个用于下游任务的大语言模型。
 
 ### LLM 使用指南
-$\quad$大语言模型是本项目的核心组件，我们选用了开源的InternLM2.5系列作为基础模型。InternLM2.5具有强大的理解和生成能力，支持8K上下文窗口，并且具有较好的中文理解能力。在实际部署中，我们采用了4bit量化版本以降低资源占用，同时保持模型性能。详细的部署和使用方法请参考docs目录下的[LLM_Usage](#)文档。
+$\quad$大语言模型是本项目的核心组件，我们选用了开源的InternLM2.5系列作为基础模型。InternLM2.5具有强大的理解和生成能力，支持长上下文窗口，并且具有较好的中文理解能力。在实际部署中，我们采用了4bit量化版本以降低资源占用，同时保持模型性能。详细的使用方法请参考[LLM_Usage](/FunGPT/LLM/models/internlm2_5_7b_chat.py)。
 
 $\quad$在本项目中，LLM主要负责对用户输入进行理解和回复生成，同时还需要处理多模态输入，并与ASR和TTS模块进行协同工作。
 
 ### ASR 使用指南
-$\quad$语音识别模块采用了开源的SenseVoice模型，该模型具有优秀的多语言语音识别能力。模型支持中英文等多语言识别，准确率较高，且能够较好地处理背景噪声。具体的部署和使用说明请查看docs中的[ASR_Usage](#)文档。
+$\quad$语音识别模块采用了开源的SenseVoice模型，该模型具有优秀的多语言语音识别能力。模型支持中英文等多语言识别，准确率较高，且能够较好地处理背景噪声。具体的部署和使用说明请查看[ASR_Usage](/FunGPT/ASR/models/sensevoice.py)文档。
 
 $\quad$在实际应用中，ASR模块负责将用户的语音输入转换为文本，并传递给LLM进行处理。我们提供了流式识别接口，也支持实时语音转写。
 
 ### TTS 使用指南
-$\quad$语音合成模块使用了开源的ChatTTS模型，该模型能够生成自然流畅的语音。我们使用了中文和英文双语模型，支持多说话人合成，并且可以调节语速和音色等参数。详细的配置和使用方法请参考docs目录下的[TTS_Usage](#)文档。
+$\quad$语音合成模块使用了开源的ChatTTS模型，该模型能够生成自然流畅的语音。支持多说话人合成，并且可以调节语速和音色等参数。详细的配置和使用方法请参考[TTS_Usage](/FunGPT/TTS/models/chattts.py)文档。
 
 $\quad$TTS模块主要负责将LLM生成的文本转换为语音输出，支持批量合成模式。我们还提供了情感控制接口，可以根据文本内容自动调整语气和语调，使输出更加自然。
 
 ### 模型微调指南
-$\quad$为了适应特定场景的需求，我们提供了完整的模型微调流程。主要采用了LoRA和QLoRA等参数高效的微调方法，可以在消费级显卡上进行训练。微调过程使用了[Xtuner](https://github.com/InternLM/xtuner)工具，该工具提供了友好的配置模板和完善的训练监控。具体的微调流程和参数设置请参考docs中的[Xtuner_Usage](#)文档。
+$\quad$为了适应特定场景的需求，我们提供了完整的模型微调流程。主要采用了LoRA和QLoRA等参数高效的微调方法，可以在消费级显卡上进行训练。微调过程使用了[Xtuner](https://github.com/InternLM/xtuner)工具，该工具提供了友好的配置模板和完善的训练监控。具体的微调流程和参数设置请参考docs中的[Xtuner_Usage](/FunGPT/Finetune/Kua_LLM/scripts/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py)文档。
 
 $\quad$微调支持指令对齐、多轮对话、角色扮演等多种任务类型。我们提供了预处理脚本来转换数据格式，同时也支持增量训练，可以在已有模型基础上继续优化。
 
 ### 模型量化指南
-$\quad$为了在有限的计算资源下部署大模型，量化是一个重要的优化手段。我们使用[LMDeploy](https://github.com/InternLM/lmdeploy)工具进行模型量化，支持INT4量化，在保持模型性能的同时大幅减少显存占用，详细的量化流程请参考docs目录下的[LMDeploy_Usage](#)文档。
+$\quad$为了在有限的计算资源下部署大模型，量化是一个重要的优化手段。我们使用[LMDeploy](https://github.com/InternLM/lmdeploy)工具进行模型量化，支持INT4量化，在保持模型性能的同时减少显存占用，详细的量化流程请参考[LMDeploy_Usage](https://github.com/InternLM/lmdeploy)文档。
 
 $\quad$量化过程支持权重量化和激活值量化，并提供了量化后的精度验证工具。LMDeploy还提供了不同量化策略的性能对比数据，帮助用户选择最适合的量化方案。
 
 # 🔮 未来开发计划
 
-1. - [ ] 支持GPT-Sovits
-2. - [ ] 支持API接入大语言模型
-3. - [ ] 完善数据生成指南部分
-4. - [ ] 完善大语言模型使用部分
-5. - [ ] 完善文本转语音模块介绍部分
-6. - [ ] 完善语音识别使用部分
+1. - [×] 录制项目视频
+2. - [ ] 支持GPT-Sovits
+3. - [ ] 支持API接入大语言模型
+4. - [ ] 完善数据生成指南部分
+5. - [ ] 完善大语言模型使用部分
+6. - [ ] 完善文本转语音模块介绍部分
+7. - [ ] 完善语音识别使用部分
+8. - [×] 加入敏感词模块
 
 # 🙏 致谢
 
