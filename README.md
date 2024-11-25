@@ -15,9 +15,7 @@
 [![GitHub forks](https://img.shields.io/github/forks/Alannikos/FunGPT?style=flat&logo=github&color=%23FF9800)](https://github.com/Alannikos/FunGPT/forks)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Alannikos/FunGPT?style=flat&logo=github&color=%23FFEB3B)
 ![GitHub License](https://img.shields.io/github/license/Alannikos/FunGPT?style=flat&logo=github&color=%234CAF50)
-
 [![Discord](https://img.shields.io/discord/1308061124419260446?style=flat&logo=discord)](https://discord.com/channels/1308061124419260446/)
-
 [![TODO](https://img.shields.io/badge/update%20-todo-blue)](https://github.com/Alannikos/FunGPT)
 [![Bilibili](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Frelation%2Fstat%3Fvmid%3D3494365446015137&query=%24.data.follower&style=flat&logo=bilibili&label=followers&color=%23FF69B4)](https://space.bilibili.com/3494365446015137)
 [![OpenXLab_Model](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/Alannikos/BoostBot-7b-chat)
@@ -67,7 +65,7 @@ _____________________________________________________________________
 
 # 🤔 Project Highlights
 
-$\quad$**FunGPT** is built on the cutting-edge InternLM2.5 series models. Using Xtuner, we performed both instruction and full fine-tuning, enabling the models to meet personalized user needs. To enhance accessibility, we released the 1.8B series of lightweight models, which deliver exceptional performance despite their reduced size. Additionally, we employed **AWQ quantization** using LMDeploy on multiple models, saving GPU memory while boosting inference speed! ⚡
+$\quad$**FunGPT** is built on the cutting-edge InternLM2.5 series models. Using [Xtuner](https://github.com/InternLM/xtuner), we performed both instruction and full fine-tuning, enabling the models to meet personalized user needs. To enhance accessibility, we released the 1.8B series of lightweight models, which deliver exceptional performance despite their reduced size. Additionally, we employed **AWQ quantization** using LMDeploy on multiple models, saving GPU memory while boosting inference speed! ⚡
 
 $\quad$ This project caters to every users by focusing on the two scenarios of praise and roasting, allowing users to chat with our two "Masters" to regulate their moods. For developers just entering the world of LLMs, we provide extensive documentation and video tutorials covering LLM, ASR, and TTS, making this project an ideal entry point for mastering large model development skills.
 
@@ -76,7 +74,7 @@ $\quad$ Our advantages include, but are not limited to:
 1. 🤗 **Master of Compliments**: Generate sweet words to brighten your daily life.
 2. 🗯️ **Roasting Expert**: Tailored responses with sharp wit, engaging in a battle of wits with "me."
 3. 📊 **Data Collection Guide**: Fully open-source, helping you quickly grasp the creation of fine-tuning datasets.
-4. 📖 **Complete LLM Workflow Guide**: Comprehensive code and documentation, 100% open-source, making it easy to get started.
+4. 📖 **Complete LLM Workflow Guide**: Comprehensive code and documentation, open-source, making it easy to get started.
 5. 🔊 **Complete ASR Workflow Guide**: Open everything to help you realize your dream of speech recognition.
 6. 🎙️ **Complete TTS Workflow Guide**: From basics to advanced, fully open-source with no reservations!
 7. 📂 **Clear Structure**: Detailed annotations and documentation ensure seamless onboarding.
@@ -92,8 +90,6 @@ $\quad$ Our advantages include, but are not limited to:
 |Original_7b_BanterBot|BanterBot-7b|
 |:---:|:---:|
 |<img src="./Assets/gif/Original_7b_BanterBot.gif" width="400">|<img src="./Assets/gif/BanterBot-7b.gif" width="400">|
-
-
 
 # 🏗️ Project Architecture Diagram
 
@@ -290,44 +286,46 @@ Open your browser, input `http://127.0.0.1:7860`, and click the corresponding in
 # 📚 Detailed Guide
 
 ### Data Generation Guide
-$\quad$ In the fine-tuning process of large models, we can utilize various algorithms for SFT, whether through native techniques like LoRA fine-tuning or using packaged tools such as [Xtuner](https://github.com/InternLM/xtuner) and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). We need to prepare high-quality fine-tuning data. However, the cost of manual data annotation is relatively high, which is inefficient for most individual developers. Thus, this project uses ChatGLM4-Flash, available for free from Zhipu, to generate the multi-turn dialogue datasets we need. This approach is simple and easy to control. Generally, the generated datasets can achieve satisfactory fine-tuning results. For the specific data generation guide, you can refer to the [data_generation_Usage](#) in the docs.
+$\quad$ In the fine-tuning process of large models, we can utilize various algorithms for SFT, whether through native techniques like LoRA fine-tuning or using packaged tools such as [Xtuner](https://github.com/InternLM/xtuner) and [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory). We need to prepare high-quality fine-tuning data. However, the cost of manual data annotation is relatively high, which is inefficient for most individual developers. Thus, this project uses [ChatGLM4-Flash](https://bigmodel.cn/), available for free from Zhipu, to generate the multi-turn dialogue datasets we need. This approach is simple and easy to control. Generally, the generated datasets can achieve satisfactory fine-tuning results. For the specific data generation guide, you can refer to the [data_generation](Data/BoostBot/scripts/generate_mutil_conv_chatglm.py).
 
 $\quad$ In our documentation, we will mainly introduce the process of creating a multi-turn dialogue dataset and how to construct a self-awareness dataset. With these two parts of the dataset, you can basically fine-tune a large language model for downstream tasks.
 
 ### LLM Usage Guide
-$\quad$ The large language model is the core component of this project. We selected the open-source InternLM2.5 series as the base model. InternLM2.5 has strong understanding and generation capabilities, supports an 8K context window, and has good Chinese language understanding capabilities. In actual deployment, we use a 4bit quantized version to reduce resource consumption while maintaining model performance. For detailed deployment and usage methods, please refer to the [LLM_Usage](#) document in the docs directory.
+$\quad$ The large language model is the core component of this project. We selected the open-source InternLM2.5 series as the base model. InternLM2.5 has strong understanding and generation capabilities, supports an 8K context window, and has good Chinese language understanding capabilities. In actual deployment, we use a 4bit quantized version to reduce resource consumption while maintaining model performance. For detailed deployment and usage methods, please refer to the [LLM_Usage](LLM/models/internlm2_5_7b_chat.py) document.
 
 $\quad$ In this project, the LLM is primarily responsible for understanding user input and generating responses. It also needs to handle multi-modal input and coordinate with ASR and TTS modules.
 
 ### ASR Usage Guide
-$\quad$ The speech recognition module uses the open-source SenseVoice model, which has excellent multilingual speech recognition capabilities. The model supports multiple languages, including Chinese and English, with high accuracy and good ability to handle background noise. For specific deployment and usage instructions, please check the [ASR_Usage](#) document in the docs.
+$\quad$ The speech recognition module uses the open-source SenseVoice model, which has excellent multilingual speech recognition capabilities. The model supports multiple languages, including Chinese and English, with high accuracy and good ability to handle background noise. For specific deployment and usage instructions, please check the [ASR_Usage](ASR/models/sensevoice.py) document.
 
 $\quad$ In practical applications, the ASR module is responsible for converting user voice input into text and passing it to the LLM for processing. We provide a streaming recognition interface and support real-time speech transcription.
 
 ### TTS Usage Guide
-$\quad$ The speech synthesis module uses the open-source ChatTTS model, which can generate natural and smooth speech. We use a bilingual model for Chinese and English, supporting multi-speaker synthesis and adjustable parameters like speed and timbre. For detailed configuration and usage methods, please refer to the [TTS_Usage](#) document in the docs directory.
+$\quad$ The speech synthesis module uses the open-source ChatTTS model, which can generate natural and smooth speech. We use a bilingual model for Chinese and English, supporting multi-speaker synthesis and adjustable parameters like speed and timbre. For detailed configuration and usage methods, please refer to the [TTS_Usage](TTS/models/chattts.py) document.
 
 $\quad$ The TTS module is mainly responsible for converting text generated by the LLM into speech output, supporting batch synthesis mode. We also provide an emotion control interface that can automatically adjust the tone and pitch according to the text content for more natural output.
 
 ### Model Fine-Tuning Guide
-$\quad$ To meet the needs of specific scenarios, we provide a complete model fine-tuning process. We mainly use parameter-efficient fine-tuning methods like LoRA and QLoRA, which can be trained on consumer-grade graphics cards. The fine-tuning process uses the [Xtuner](https://github.com/InternLM/xtuner) tool, which offers friendly configuration templates and comprehensive training monitoring. For specific fine-tuning processes and parameter settings, please refer to the [Xtuner_Usage](#) document in the docs.
+$\quad$ To meet the needs of specific scenarios, we provide a complete model fine-tuning process. We mainly use parameter-efficient fine-tuning methods like LoRA and QLoRA, which can be trained on consumer-grade graphics cards. The fine-tuning process uses the [Xtuner](https://github.com/InternLM/xtuner) tool, which offers friendly configuration templates and comprehensive training monitoring. For specific fine-tuning processes and parameter settings, please refer to the [Xtuner_Usage](Finetune/BoostBot/scripts/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py) document.
 
 $\quad$ Fine-tuning supports various task types such as instruction alignment, multi-turn dialogue, and role-playing. We provide pre-processing scripts to convert data formats and also support incremental training for further optimization on existing models.
 
 ### Model Quantization Guide
-$\quad$ Quantization is an important optimization method to deploy large models with limited computing resources. We use the [LMDeploy](https://github.com/InternLM/lmdeploy) tool for model quantization, supporting INT4 quantization to significantly reduce memory usage while maintaining model performance. For detailed quantization processes, refer to the [LMDeploy_Usage](#) document in the docs directory.
+$\quad$ Quantization is an important optimization method to deploy large models with limited computing resources. We use the [LMDeploy](https://github.com/InternLM/lmdeploy) tool for model quantization, supporting INT4 quantization to significantly reduce memory usage while maintaining model performance. For detailed quantization processes, refer to the [LMDeploy_Usage](https://github.com/InternLM/lmdeploy) document.
 
 $\quad$ The quantization process supports weight quantization and activation value quantization, and provides tools to verify the accuracy of quantized models. LMDeploy also offers performance comparison data of different quantization strategies to help users choose the most suitable quantization plan.
 
 
 # 🔮 Future Development Plans
 
-1. - [ ] Support GPT-Sovits
-2. - [ ] Support API access for large language models
-3. - [ ] Improve the data generation guide section
-4. - [ ] Enhance the large language model usage section
-5. - [ ] Refine the text-to-speech module introduction section
-6. - [ ] Improve the speech recognition usage section
+1. - [x] ~~Recording Project Video~~
+2. - [ ] Support GPT-Sovits
+3. - [ ] Support API access for large language models
+4. - [ ] Improve the data generation guide section
+5. - [ ] Enhance the large language model usage section
+6. - [ ] Refine the text-to-speech module introduction section
+7. - [ ] Improve the speech recognition usage section
+8. - [x] ~~Add Sensitive Words Module~~
 
 # 🙏 Acknowledgments
 
