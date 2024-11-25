@@ -334,9 +334,9 @@ $\quad$量化过程支持权重量化和激活值量化，并提供了量化后�
 | [Linly-Talker](https://github.com/Kedreamix/Linly-Talker) | 一款关于人工智能系统的开源项目 |
 | [Yanjie](https://github.com/Alannikos/Yanjie) | 一个关于促进英语学习的人工智能助手的开源项目 |
 | [wulewule](https://github.com/xzyun2011/wulewule) | 一个关于黑神话悟空的人工智能助手的开源项目 |
+| [ChatSensitiveWords](https://github.com/kaixindelele/ChatSensitiveWords/) | 一个关于敏感词过滤的开源项目 |
 
 ## 特别鸣谢
-
 | 机构 | 描述 |
 |---|---|
 | [上海人工智能实验室](https://www.shlab.org.cn/) | 感谢提供的技术支持以及平台支持 |

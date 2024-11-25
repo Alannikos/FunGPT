@@ -352,6 +352,7 @@ Thanks to the following open-source tools and projects for their support:
 | [Linly-Talker](https://github.com/Kedreamix/Linly-Talker) | An open-source project on artificial intelligence systems |
 | [Yanjie](https://github.com/Alannikos/Yanjie) | An open-source project for enhancing English learning with an AI assistant |
 | [wulewule](https://github.com/xzyun2011/wulewule) | An open-source project featuring an AI assistant themed on Black Myth: Wukong |
+| [ChatSensitiveWords](https://github.com/kaixindelele/ChatSensitiveWords/) | An  project concerning SensitiveWords |
 
 ## Special Thanks
 
