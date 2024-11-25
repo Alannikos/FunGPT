@@ -333,7 +333,7 @@ Thanks to the following open-source tools and projects for their support:
 
 | Tool | Description |
 |---|---|
-| [InternlM-Tutorial](https://github.com/InternLM/Tutorial) | An active and open large model training camp |
+| [InternLM-Tutorial](https://github.com/InternLM/Tutorial) | An active and open large model training camp |
 | [Xtuner](https://github.com/InternLM/xtuner) | Tool for model training and fine-tuning |
 | [LMDeploy](https://github.com/InternLM/lmdeploy) | Tool for model quantization and deployment |
 | [Streamlit](https://streamlit.io/) | Tool for efficiently building AI applications |

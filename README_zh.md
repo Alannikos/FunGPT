@@ -315,7 +315,7 @@ $\quad$量化过程支持权重量化和激活值量化，并提供了量化后�
 
 | 项目 | 描述 |
 |---|---|
-| [InternlM-Tutorial](https://github.com/InternLM/Tutorial) | 活跃且开源的大模型训练营 |
+| [InternLM-Tutorial](https://github.com/InternLM/Tutorial) | 活跃且开源的大模型训练营 |
 | [Xtuner](https://github.com/InternLM/xtuner) | 用于模型训练和微调的工具 |
 | [LMDeploy](https://github.com/InternLM/lmdeploy) | 用于模型量化和部署的工具 |
 | [Streamlit](https://streamlit.io/) | 高效构建AI应用的工具 |
