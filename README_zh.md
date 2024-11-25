@@ -269,7 +269,7 @@ ssh -p 46411 user@ip -CNg -L 7860:127.0.0.1:7860 -o StrictHostKeyChecking=no
 # 📚 详细指南
 
 ### 数据生成指南
-$\quad$在大模型微调过程中，我们可以借助许多算法进行SFT，不论是通过原生的LoRA微调等技术，还是通过封装好的工具，比如[Xtuner](https://github.com/InternLM/xtuner)，[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)等，我们都需要准备高质量的微调数据，但是通过人工手动标注数据的成本较高，对于大部分个人开发者来说，效率还是比较低下，所以本项目采用智谱免费使用的[ChatGLM4-Flash](https://bigmodel.cn/)来生成我们所需要的多轮对话数据集，这样的方式简单且易于控制。通常来说，生成的数据集还是能够达到较好的微调效果，具体的数据生成指南可以参考[data_generation](Data/Kua_LLM/scripts/generate_mutil_conv_chatglm.py)。
+$\quad$在大模型微调过程中，我们可以借助许多算法进行SFT，不论是通过原生的LoRA微调等技术，还是通过封装好的工具，比如[Xtuner](https://github.com/InternLM/xtuner)，[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)等，我们都需要准备高质量的微调数据，但是通过人工手动标注数据的成本较高，对于大部分个人开发者来说，效率还是比较低下，所以本项目采用智谱免费使用的[ChatGLM4-Flash](https://bigmodel.cn/)来生成我们所需要的多轮对话数据集，这样的方式简单且易于控制。通常来说，生成的数据集还是能够达到较好的微调效果，具体的数据生成指南可以参考[data_generation](Data/BoostBot/scripts/generate_mutil_conv_chatglm.py)。
 
 $\quad$在我们的文档中，我们将主要介绍关于多轮对话数据集制作过程以及如何去构造自我认知数据集，通过这两部分数据集，基本可以微调出一个用于下游任务的大语言模型。
 
@@ -289,7 +289,7 @@ $\quad$语音合成模块使用了开源的ChatTTS模型，该模型能够生成
 $\quad$TTS模块主要负责将LLM生成的文本转换为语音输出，支持批量合成模式。我们还提供了情感控制接口，可以根据文本内容自动调整语气和语调，使输出更加自然。
 
 ### 模型微调指南
-$\quad$为了适应特定场景的需求，我们提供了完整的模型微调流程。主要采用了LoRA和QLoRA等参数高效的微调方法，可以在消费级显卡上进行训练。微调过程使用了[Xtuner](https://github.com/InternLM/xtuner)工具，该工具提供了友好的配置模板和完善的训练监控。具体的微调流程和参数设置请参考docs中的[Xtuner_Usage](Finetune/Kua_LLM/scripts/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py)文档。
+$\quad$为了适应特定场景的需求，我们提供了完整的模型微调流程。主要采用了LoRA和QLoRA等参数高效的微调方法，可以在消费级显卡上进行训练。微调过程使用了[Xtuner](https://github.com/InternLM/xtuner)工具，该工具提供了友好的配置模板和完善的训练监控。具体的微调流程和参数设置请参考docs中的[Xtuner_Usage](Finetune/BoostBot/scripts/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py)文档。
 
 $\quad$微调支持指令对齐、多轮对话、角色扮演等多种任务类型。我们提供了预处理脚本来转换数据格式，同时也支持增量训练，可以在已有模型基础上继续优化。
 
@@ -300,14 +300,14 @@ $\quad$量化过程支持权重量化和激活值量化，并提供了量化后�
 
 # 🔮 未来开发计划
 
-1. - [×] 录制项目视频
+1. - [ × ] 录制项目视频
 2. - [ ] 支持GPT-Sovits
 3. - [ ] 支持API接入大语言模型
 4. - [ ] 完善数据生成指南部分
 5. - [ ] 完善大语言模型使用部分
 6. - [ ] 完善文本转语音模块介绍部分
 7. - [ ] 完善语音识别使用部分
-8. - [×] 加入敏感词模块
+8. - [ × ] 加入敏感词模块
 
 # 🙏 致谢
 
@@ -335,6 +335,7 @@ $\quad$量化过程支持权重量化和激活值量化，并提供了量化后�
 | [Yanjie](https://github.com/Alannikos/Yanjie) | 一个关于促进英语学习的人工智能助手的开源项目 |
 | [wulewule](https://github.com/xzyun2011/wulewule) | 一个关于黑神话悟空的人工智能助手的开源项目 |
 | [ChatSensitiveWords](https://github.com/kaixindelele/ChatSensitiveWords/) | 一个关于敏感词过滤的开源项目 |
+
 
 ## 特别鸣谢
 | 机构 | 描述 |
