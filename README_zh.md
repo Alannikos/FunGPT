@@ -269,27 +269,27 @@ ssh -p 46411 user@ip -CNg -L 7860:127.0.0.1:7860 -o StrictHostKeyChecking=no
 # 📚 详细指南
 
 ### 数据生成指南
-$\quad$在大模型微调过程中，我们可以借助许多算法进行SFT，不论是通过原生的LoRA微调等技术，还是通过封装好的工具，比如[Xtuner](https://github.com/InternLM/xtuner)，[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)等，我们都需要准备高质量的微调数据，但是通过人工手动标注数据的成本较高，对于大部分个人开发者来说，效率还是比较低下，所以本项目采用智谱免费使用的[ChatGLM4-Flash](https://bigmodel.cn/)来生成我们所需要的多轮对话数据集，这样的方式简单且易于控制。通常来说，生成的数据集还是能够达到较好的微调效果，具体的数据生成指南可以参考[data_generation](/FunGPT/Data/Kua_LLM/scripts/generate_mutil_conv_chatglm.py)。
+$\quad$在大模型微调过程中，我们可以借助许多算法进行SFT，不论是通过原生的LoRA微调等技术，还是通过封装好的工具，比如[Xtuner](https://github.com/InternLM/xtuner)，[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)等，我们都需要准备高质量的微调数据，但是通过人工手动标注数据的成本较高，对于大部分个人开发者来说，效率还是比较低下，所以本项目采用智谱免费使用的[ChatGLM4-Flash](https://bigmodel.cn/)来生成我们所需要的多轮对话数据集，这样的方式简单且易于控制。通常来说，生成的数据集还是能够达到较好的微调效果，具体的数据生成指南可以参考[data_generation](Data/Kua_LLM/scripts/generate_mutil_conv_chatglm.py)。
 
 $\quad$在我们的文档中，我们将主要介绍关于多轮对话数据集制作过程以及如何去构造自我认知数据集，通过这两部分数据集，基本可以微调出一个用于下游任务的大语言模型。
 
 ### LLM 使用指南
-$\quad$大语言模型是本项目的核心组件，我们选用了开源的InternLM2.5系列作为基础模型。InternLM2.5具有强大的理解和生成能力，支持长上下文窗口，并且具有较好的中文理解能力。在实际部署中，我们采用了4bit量化版本以降低资源占用，同时保持模型性能。详细的使用方法请参考[LLM_Usage](/FunGPT/LLM/models/internlm2_5_7b_chat.py)。
+$\quad$大语言模型是本项目的核心组件，我们选用了开源的InternLM2.5系列作为基础模型。InternLM2.5具有强大的理解和生成能力，支持长上下文窗口，并且具有较好的中文理解能力。在实际部署中，我们采用了4bit量化版本以降低资源占用，同时保持模型性能。详细的使用方法请参考[LLM_Usage](LLM/models/internlm2_5_7b_chat.py)。
 
 $\quad$在本项目中，LLM主要负责对用户输入进行理解和回复生成，同时还需要处理多模态输入，并与ASR和TTS模块进行协同工作。
 
 ### ASR 使用指南
-$\quad$语音识别模块采用了开源的SenseVoice模型，该模型具有优秀的多语言语音识别能力。模型支持中英文等多语言识别，准确率较高，且能够较好地处理背景噪声。具体的部署和使用说明请查看[ASR_Usage](/FunGPT/ASR/models/sensevoice.py)文档。
+$\quad$语音识别模块采用了开源的SenseVoice模型，该模型具有优秀的多语言语音识别能力。模型支持中英文等多语言识别，准确率较高，且能够较好地处理背景噪声。具体的部署和使用说明请查看[ASR_Usage](ASR/models/sensevoice.py)文档。
 
 $\quad$在实际应用中，ASR模块负责将用户的语音输入转换为文本，并传递给LLM进行处理。我们提供了流式识别接口，也支持实时语音转写。
 
 ### TTS 使用指南
-$\quad$语音合成模块使用了开源的ChatTTS模型，该模型能够生成自然流畅的语音。支持多说话人合成，并且可以调节语速和音色等参数。详细的配置和使用方法请参考[TTS_Usage](/FunGPT/TTS/models/chattts.py)文档。
+$\quad$语音合成模块使用了开源的ChatTTS模型，该模型能够生成自然流畅的语音。支持多说话人合成，并且可以调节语速和音色等参数。详细的配置和使用方法请参考[TTS_Usage](TTS/models/chattts.py)文档。
 
 $\quad$TTS模块主要负责将LLM生成的文本转换为语音输出，支持批量合成模式。我们还提供了情感控制接口，可以根据文本内容自动调整语气和语调，使输出更加自然。
 
 ### 模型微调指南
-$\quad$为了适应特定场景的需求，我们提供了完整的模型微调流程。主要采用了LoRA和QLoRA等参数高效的微调方法，可以在消费级显卡上进行训练。微调过程使用了[Xtuner](https://github.com/InternLM/xtuner)工具，该工具提供了友好的配置模板和完善的训练监控。具体的微调流程和参数设置请参考docs中的[Xtuner_Usage](/FunGPT/Finetune/Kua_LLM/scripts/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py)文档。
+$\quad$为了适应特定场景的需求，我们提供了完整的模型微调流程。主要采用了LoRA和QLoRA等参数高效的微调方法，可以在消费级显卡上进行训练。微调过程使用了[Xtuner](https://github.com/InternLM/xtuner)工具，该工具提供了友好的配置模板和完善的训练监控。具体的微调流程和参数设置请参考docs中的[Xtuner_Usage](Finetune/Kua_LLM/scripts/internlm2_5_chat_7b_qlora_alpaca_e3_copy.py)文档。
 
 $\quad$微调支持指令对齐、多轮对话、角色扮演等多种任务类型。我们提供了预处理脚本来转换数据格式，同时也支持增量训练，可以在已有模型基础上继续优化。
 
