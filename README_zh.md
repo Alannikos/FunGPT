@@ -103,6 +103,137 @@ $\quad$我们具有以下优势（包括但不局限于）：
 | BanterBot_1_8b-chat-w4a16-4bit | internlm2_5_chat_1_8b | 预训练+QLoRA微调+w4a16量化 | [HuggingFace](https://huggingface.co/Alannikos768/BanterBot_1_8b-chat-w4a16-4bit)<br>[OpenXLab](https://openxlab.org.cn/models/detail/Alannikos/BanterBot-1_8b-chat-w4a16-4bit) |
 | BoostBot_1_8b-chat-w4a16-4bit  | internlm2_5_chat_1_8b | 预训练+QLoRA微调+w4a16量化 | [HuggingFace](https://huggingface.co/Alannikos768/BoostBot_1_8b-chat-w4a16-4bit)<br>[OpenXLab](https://openxlab.org.cn/models/detail/Alannikos/BoostBot-1_8b-chat-w4a16-4bit) |
 
+# 📂 项目结构
+```
+.
+|-- ASR
+|   |-- __init__.py
+|   |-- models
+|   |   `-- sensevoice.py
+|   |-- readme.md
+|   `-- weights
+|       `-- readme.md
+|-- Assets
+|   |-- animation
+|   |   `-- Animation_1.json
+|   |-- avatar
+|   |   |-- BanterBot.jpg
+|   |   |-- BoostBot.jpg
+|   |   |-- BoostBot_v2.jpg
+|   |   |-- User_v1.jpg
+|   |   |-- person1.png
+|   |   `-- person2.png
+|   |-- gif
+|   |   |-- BanterBot-7b.gif
+|   |   |-- BoostBot-7b.gif
+|   |   |-- Original_7b_BanterBot.gif
+|   |   `-- Original_7b_BoostBot.gif
+|   |-- image
+|   |-- svg
+|   |   |-- FunGPT-logo.svg
+|   |   `-- openxlab_logo.svg
+|   `-- video
+|       |-- BanterBot-7b.mp4
+|       |-- BoostBot-7b.mp4
+|       |-- Original_7b_BanterBot.mp4
+|       `-- Original_7b_BoostBot.mp4
+|-- Data
+|   |-- BanterBot
+|   |   |-- feasible_data
+|   |   |   `-- readme.md
+|   |   |-- raw
+|   |   |   `-- readme.md
+|   |   |-- readme.md
+|   |   |-- sample
+|   |   |   `-- readme.md
+|   |   |-- scripts
+|   |   |   |-- filter_bad_from_conv_data.py
+|   |   |   |-- filter_sensitive_words_from_conv_data.py
+|   |   |   |-- generate_mutil_conv_chatglm.py
+|   |   |   |-- generate_mutil_topic_chatglm.py
+|   |   |   |-- generate_self_congnitive_data.py
+|   |   |   `-- merge_conv_data_finetune.py
+|   |   `-- sensitive_words
+|   |       `-- readme.md
+|   `-- BoostBot
+|       |-- feasible_data
+|       |   `-- readme.md
+|       |-- raw
+|       |   `-- topic.txt
+|       |-- sample
+|       |   `-- multi_conversation.jsonl
+|       `-- scripts
+|           |-- generate_mutil_conv_chatglm.py
+|           |-- generate_mutil_topic_chatglm.py
+|           |-- generate_self_congnitive_data.py
+|           `-- merge_conv_data_finetune.py
+|-- Docs
+|   |-- pictures
+|   |   `-- FunGPT.png
+|   |-- readme.md
+|   `-- user_guides
+|       `-- readme.md
+|-- Finetune
+|   |-- BanterBot
+|   |   `-- internlm2_5_chat_7b_qlora_alpaca_e3_copy.py
+|   |-- BaseModel
+|   |   `-- readme.md
+|   `-- BoostBot
+|       `-- internlm2_5_chat_7b_qlora_alpaca_e3_copy.py
+|-- LICENSE
+|-- LLM
+|   |-- __init__.py
+|   |-- models
+|   |   `-- internlm2_5_7b_chat.py
+|   |-- readme.md
+|   |-- templates
+|   |   `-- template.py
+|   `-- weights
+|       `-- readme.md
+|-- README.md
+|-- README_en.md
+|-- README_zh.md
+|-- TTS
+|   |-- __init__.py
+|   |-- models
+|   |   `-- chattts.py
+|   |-- readme.md
+|   `-- weights
+|       `-- readme.md
+|-- Test
+|   |-- ASR
+|   |   |-- example.py
+|   |   `-- test_wav.wav
+|   |-- TTS
+|   |   `-- example.ipynb
+|   `-- readme.md
+|-- Utils
+|   |-- common_utils.py
+|   |-- configs.py
+|   |-- convert_gif.sh
+|   |-- data_utils.py
+|   |-- model_settings.py
+|   |-- model_utils.py
+|   `-- readme.md
+|-- Work_dirs
+|   |-- ASR
+|   |   `-- readme.md
+|   `-- TTS
+|       `-- readme.md
+|-- __init__.py
+|-- app.py
+|-- env.yaml
+|-- pages
+|   |-- 1_🍬💖_甜言模式.py
+|   |-- 2_💥😤_怼语模式.py
+|   `-- 3_🚀💫_待开发ing.py
+|-- project_structure.txt
+`-- requirements.txt
+
+44 directories, 79 files
+
+```
+
 # ⚡ 快速使用
 ### 1. 部署环境
 
