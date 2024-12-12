@@ -22,8 +22,6 @@
 [![OpenXLab_Model](https://cdn-static.openxlab.org.cn/header/openxlab_models.svg)](https://openxlab.org.cn/models/detail/Alannikos/BoostBot-7b-chat)
 </div>
 
-<iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113541302453832&bvid=BV1EGBYYtEMA&cid=26992839693&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
-
 _____________________________________________________________________
 
 
