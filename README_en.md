@@ -51,7 +51,7 @@ _____________________________________________________________________
 
 # 🌟 Project Introduction
 
-$\quad$ In this fast-paced world, we all need a little spice to balance our lives. Whether you’re looking for some **sweet compliments** to lift your spirits or a dose of **sharp retorts** to blow off steam, **FunGPT**, developed based on the InternLM2.5 series models, is here to meet your needs.
+$\quad$ In this fast-paced world 🌍, we all need a little spice to balance our lives. Whether you’re looking for some **sweet compliments** 🍭 to lift your spirits ✨ or a dose of **sharp retorts** 💥 to blow off steam 😤, **FunGPT**, developed based on the InternLM2.5 series models 🤖, is here to meet your needs 🎯!
 
 🍬 Sweet Compliment Mode:
 
