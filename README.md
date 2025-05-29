@@ -65,7 +65,6 @@ $\quad$ In this fast-paced world 🌍, we all need a little spice to balance our
 - **Humorous Roasting Machine 😂👅**: The words of the **Roast Master** are not only sharp but also humorous and imaginative, letting you experience brain-twisting comebacks while having fun.
 
 
-_____________________________________________________________________
 
 # 💬 Join Our WeChat Group
 
@@ -75,7 +74,6 @@ Scan the QR code below to join our WeChat discussion group and communicate with 
   <img src="Assets/image/wechat_group.jpg" width="200"/>
 </div>
 
-_____________________________________________________________________
 
 # 🤔 Project Highlights
 
