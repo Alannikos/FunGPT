@@ -66,6 +66,16 @@ $\quad$ In this fast-paced world 🌍, we all need a little spice to balance our
 
 _____________________________________________________________________
 
+# 💬 Join Our WeChat Group
+
+Scan the QR code below to join our WeChat discussion group and communicate with more developers and users!
+
+<div align="center">
+  <img src="Assets/image/wechat_group.jpg" width="200"/>
+</div>
+
+_____________________________________________________________________
+
 # 🤔 Project Highlights
 
 $\quad$**FunGPT** is built on the cutting-edge InternLM2.5 series models. Using [Xtuner](https://github.com/InternLM/xtuner), we performed both instruction and full fine-tuning, enabling the models to meet personalized user needs. To enhance accessibility, we released the 1.8B series of lightweight models, which deliver exceptional performance despite their reduced size. Additionally, we employed **AWQ quantization** using LMDeploy on multiple models, saving GPU memory while boosting inference speed! ⚡
