@@ -1,6 +1,6 @@
 import os
 import sys
-sys.path.append("/root/Project_FunGPT/Developing")
+sys.path.append("/root/Project_FunGPT/FunGPT")
 
 from ASR.models.sensevoice import Sensevoice
 from TTS.models.chattts import MyChatTTS

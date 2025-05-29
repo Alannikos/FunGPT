@@ -7,7 +7,8 @@ import requests
 from dataclasses import asdict
 import streamlit as st
 from streamlit_lottie import st_lottie
-sys.path.append("/root/Project_FunGPT/Developing")
+
+sys.path.append("/root/Project_FunGPT/FunGPT")
 
 from Utils.model_utils import init_LLM_Model, init_ASR_Model, init_TTS_Model
 from Utils.model_settings import llm_settings, asr_settings, tts_settings
@@ -15,6 +16,7 @@ from Utils.common_utils import initialize_session_state
 from Utils.common_utils import get_avatar, combine_history, load_lottieurl
 from Utils.data_utils import get_audio_input, handle_user_input
 from Utils.configs import Config
+
 
 def main():
     st.title("FunGPT  -  您的情感调酒师🍹")
@@ -106,7 +108,7 @@ def main():
     # 初始化模型
     if llm_config["use"] and (st.session_state.LLM_Model is None or st.session_state.llm_config != llm_config):
         loading_placeholder.info("正在加载LLM模型...")
-        st.session_state.LLM_Model = init_LLM_Model(model_path=Config.PROJECT_PATH / 'LLM/weights/internlm2_5-7b-chat')
+        st.session_state.LLM_Model = init_LLM_Model(model_path=Config.PROJECT_PATH / 'LLM/weights/BanterBot_1_8b-chat')
 
         st.session_state.llm_config = llm_config
         loading_placeholder.success("LLM模型加载完成！")

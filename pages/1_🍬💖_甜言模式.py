@@ -7,7 +7,8 @@ import requests
 from dataclasses import asdict
 import streamlit as st
 from streamlit_lottie import st_lottie
-sys.path.append("/root/Project_FunGPT/Developing")
+
+sys.path.append("/root/Project_FunGPT/FunGPT")
 
 from Utils.configs import Config
 from Utils.model_utils import init_LLM_Model, init_ASR_Model, init_TTS_Model
@@ -108,7 +109,7 @@ def main():
     # 初始化模型
     if llm_config["use"] and (st.session_state.LLM_Model is None or st.session_state.llm_config != llm_config):
         loading_placeholder.info("正在加载LLM模型...")
-        st.session_state.LLM_Model = init_LLM_Model(model_path=Config.PROJECT_PATH / 'LLM/weights/internlm2_5-7b-chat')
+        st.session_state.LLM_Model = init_LLM_Model(model_path=Config.PROJECT_PATH / 'LLM/weights/BoostBot_1_8b-chat')
         st.session_state.llm_config = llm_config
         loading_placeholder.success("LLM模型加载完成！")
         time.sleep(1)
