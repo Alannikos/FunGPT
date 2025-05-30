@@ -30,6 +30,7 @@ _____________________________________________________________________
 <details open>
 <summary><b>2024</b></summary>
 
+- \[2025/05/30\] 🤗📊 Open-sourced the compliment fine-tuning dataset for BoostBot. [ComplimentCorpus](https://huggingface.co/datasets/Alannikos768/ComplimentCorpus)
 - \[2025/05/29\] 🛠️🎯 Fixed some path-related bugs [FIX](https://github.com/Alannikos/FunGPT/commit/b1e25f7addebd91d8ec031a013403365ad495c94)
 - \[2024/11/30\] 📢📺 We've released a project introduction video! You can find the video on [Bilibili](https://www.bilibili.com/video/BV1EGBYYtEMA/). If you like it, don't forget to give it a thumbs up 👍 and follow us!
 - \[2024/11/19\] 🔒🛡️ Incorporate a sensitive word processing module to prevent the model from outputting harmful viewpoints.
